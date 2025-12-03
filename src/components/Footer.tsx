@@ -1,0 +1,133 @@
+import { Link } from 'react-router-dom';
+import { Github, Linkedin, Twitter, Mail, ArrowUpRight } from 'lucide-react';
+
+const footerLinks = {
+  navigation: [
+    { href: '/', label: 'Home' },
+    { href: '/projects', label: 'Projects' },
+    { href: '/services', label: 'Services' },
+    { href: '/about', label: 'About' },
+  ],
+  services: [
+    { href: '/services', label: 'Landing Pages' },
+    { href: '/services', label: 'Business Websites' },
+    { href: '/services', label: 'Full-stack Development' },
+    { href: '/services', label: 'UI/UX Design' },
+  ],
+};
+
+const socialLinks = [
+  { href: 'https://github.com', icon: Github, label: 'GitHub' },
+  { href: 'https://linkedin.com', icon: Linkedin, label: 'LinkedIn' },
+  { href: 'https://twitter.com', icon: Twitter, label: 'Twitter' },
+  { href: 'mailto:hello@acrion.dev', icon: Mail, label: 'Email' },
+];
+
+export function Footer() {
+  return (
+    <footer className="bg-foreground text-background">
+      <div className="container-custom section-padding pb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          {/* Brand */}
+          <div className="lg:col-span-1">
+            <Link to="/" className="flex items-center gap-2 mb-6">
+              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
+                <span className="text-primary-foreground font-bold text-xl">A</span>
+              </div>
+              <span className="text-xl font-bold">Acrion</span>
+            </Link>
+            <p className="text-background/70 mb-6 leading-relaxed">
+              Crafting digital experiences with style. We transform ideas into 
+              beautiful, functional web solutions.
+            </p>
+            <div className="flex gap-4">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
+                  aria-label={social.label}
+                >
+                  <social.icon className="w-5 h-5" />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Navigation */}
+          <div>
+            <h4 className="font-semibold mb-6">Navigation</h4>
+            <ul className="space-y-4">
+              {footerLinks.navigation.map((link) => (
+                <li key={link.href + link.label}>
+                  <Link
+                    to={link.href}
+                    className="text-background/70 hover:text-primary transition-colors duration-300 flex items-center gap-1 group"
+                  >
+                    {link.label}
+                    <ArrowUpRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h4 className="font-semibold mb-6">Services</h4>
+            <ul className="space-y-4">
+              {footerLinks.services.map((link, index) => (
+                <li key={index}>
+                  <Link
+                    to={link.href}
+                    className="text-background/70 hover:text-primary transition-colors duration-300 flex items-center gap-1 group"
+                  >
+                    {link.label}
+                    <ArrowUpRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="font-semibold mb-6">Get in Touch</h4>
+            <ul className="space-y-4">
+              <li>
+                <a
+                  href="mailto:hello@acrion.dev"
+                  className="text-background/70 hover:text-primary transition-colors duration-300"
+                >
+                  hello@acrion.dev
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/1234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-background/70 hover:text-primary transition-colors duration-300"
+                >
+                  WhatsApp
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom */}
+        <div className="pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-background/50 text-sm">
+            © {new Date().getFullYear()} Acrion. All rights reserved.
+          </p>
+          <p className="text-background/50 text-sm">
+            Crafted with passion in Malaysia
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
