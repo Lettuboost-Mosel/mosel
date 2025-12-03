@@ -12,8 +12,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@acrion.dev',
-    href: 'mailto:hello@acrion.dev',
+    value: 'hello@mosel.dev',
+    href: 'mailto:hello@mosel.dev',
   },
   {
     icon: Phone,

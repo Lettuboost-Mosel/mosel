@@ -24,7 +24,7 @@ const achievements = [
 ];
 
 const milestones = [
-  { year: '2022', title: 'Studio Founded', description: 'Acrion was established with a vision to create exceptional digital experiences.' },
+  { year: '2022', title: 'Studio Founded', description: 'Mosel was established with a vision to help businesses sell more.' },
   { year: '2022', title: 'First Awards', description: 'Won Best Teamwork at National Fintech Codeathon and 3rd Prize at Innovate Carlo Rino.' },
   { year: '2023', title: 'Growing Portfolio', description: 'Expanded our services and delivered multiple successful projects.' },
   { year: '2024', title: 'Continued Growth', description: 'Continuing to push boundaries and deliver exceptional work for our clients.' },

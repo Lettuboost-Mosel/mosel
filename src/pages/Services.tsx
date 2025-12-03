@@ -168,7 +168,7 @@ export default function Services() {
           <div className="container-custom">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
-                <span className="text-primary font-medium mb-4 block">Why Acrion</span>
+                <span className="text-primary font-medium mb-4 block">Why Mosel</span>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
                   Why Choose Us?
                 </h2>

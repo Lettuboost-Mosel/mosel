@@ -79,11 +79,11 @@ export default function About() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 animate-fade-in" style={{ animationDelay: '100ms' }}>
                 We Build Digital <span className="text-gradient">Experiences</span>
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed animate-fade-in" style={{ animationDelay: '200ms' }}>
-                Acrion is a web development studio dedicated to transforming ideas into 
-                beautiful, functional digital solutions. We combine creativity with 
-                technical expertise to deliver exceptional results.
-              </p>
+            <p className="text-xl text-muted-foreground leading-relaxed animate-fade-in" style={{ animationDelay: '200ms' }}>
+              Mosel is a web development studio dedicated to transforming ideas into 
+              beautiful, functional digital solutions. We combine creativity with 
+              technical expertise to help you sell more.
+            </p>
             </div>
           </div>
         </section>
@@ -99,7 +99,7 @@ export default function About() {
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Acrion was born from a simple belief: that every business deserves 
+                    Mosel was born from a simple belief: that every business deserves 
                     a digital presence that truly represents their vision. What started 
                     as a passion project has evolved into a full-fledged web development 
                     studio.
@@ -127,9 +127,9 @@ export default function About() {
                   />
                 </div>
                 {/* Floating Card */}
-                <div className="absolute -bottom-6 -left-6 p-6 rounded-2xl bg-card border border-border/50 shadow-xl max-w-xs">
+              <div className="absolute -bottom-6 -left-6 p-6 rounded-2xl bg-card border border-border/50 shadow-xl max-w-xs">
                   <div className="text-4xl font-bold text-primary mb-1">2+</div>
-                  <div className="text-muted-foreground">Years of crafting digital experiences</div>
+                  <div className="text-muted-foreground">Years helping businesses sell more</div>
                 </div>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function About() {
             <SectionHeader
               label="Our Values"
               title="What Drives Us"
-              description="The principles that guide everything we do at Acrion."
+              description="The principles that guide everything we do at Mosel."
             />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -168,7 +168,7 @@ export default function About() {
           <div className="container-custom">
             <SectionHeader
               label="Our Team"
-              title="Meet the People Behind Acrion"
+              title="Meet the People Behind Mosel"
               description="A talented group of individuals passionate about creating exceptional digital experiences."
             />
 
