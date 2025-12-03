@@ -23,9 +23,9 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-              <span className="text-primary-foreground font-bold text-xl">A</span>
+              <span className="text-primary-foreground font-bold text-xl">M</span>
             </div>
-            <span className="text-xl font-bold tracking-tight">Acrion</span>
+            <span className="text-xl font-bold tracking-tight">Mosel</span>
           </Link>
 
           {/* Desktop Navigation */}

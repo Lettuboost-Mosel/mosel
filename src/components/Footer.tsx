@@ -20,7 +20,7 @@ const socialLinks = [
   { href: 'https://github.com', icon: Github, label: 'GitHub' },
   { href: 'https://linkedin.com', icon: Linkedin, label: 'LinkedIn' },
   { href: 'https://twitter.com', icon: Twitter, label: 'Twitter' },
-  { href: 'mailto:hello@acrion.dev', icon: Mail, label: 'Email' },
+  { href: 'mailto:hello@mosel.dev', icon: Mail, label: 'Email' },
 ];
 
 export function Footer() {
@@ -32,12 +32,12 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-6">
               <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">A</span>
+                <span className="text-primary-foreground font-bold text-xl">M</span>
               </div>
-              <span className="text-xl font-bold">Acrion</span>
+              <span className="text-xl font-bold">Mosel</span>
             </Link>
             <p className="text-background/70 mb-6 leading-relaxed">
-              Crafting digital experiences with style. We transform ideas into 
+              Mosel... More sell. We transform ideas into 
               beautiful, functional web solutions.
             </p>
             <div className="flex gap-4">
@@ -98,10 +98,10 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="mailto:hello@acrion.dev"
+                  href="mailto:hello@mosel.dev"
                   className="text-background/70 hover:text-primary transition-colors duration-300"
                 >
-                  hello@acrion.dev
+                  hello@mosel.dev
                 </a>
               </li>
               <li>
@@ -121,7 +121,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/50 text-sm">
-            © {new Date().getFullYear()} Acrion. All rights reserved.
+            © {new Date().getFullYear()} Mosel. All rights reserved.
           </p>
           <p className="text-background/50 text-sm">
             Crafted with passion in Malaysia

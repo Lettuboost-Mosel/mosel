@@ -50,11 +50,11 @@ export default function Index() {
 
             {/* Heading */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 animate-fade-in" style={{ animationDelay: '100ms' }}>
-              <span className="text-gradient">Acrion</span>
+              <span className="text-gradient">Mosel</span>
             </h1>
             
             <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-muted-foreground mb-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
-              Crafting digital experiences with style.
+              Mosel... More sell.
             </p>
 
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: '300ms' }}>
