@@ -21,12 +21,19 @@ const achievements = [
     description: 'Awarded for outstanding user interface and experience design in the Carlo Rino innovation challenge at Universiti Putra Malaysia.',
     icon: Medal,
   },
+  {
+    title: '1st Winning Prize',
+    event: 'Digital Kampung Website for Community',
+    year: 2023,
+    description: 'Won first place for designing and developing an impactful community website that connects and empowers local kampung residents.',
+    icon: Award,
+  },
 ];
 
 const milestones = [
   { year: '2022', title: 'Studio Founded', description: 'Mosel was established with a vision to help businesses sell more.' },
   { year: '2022', title: 'First Awards', description: 'Won Best Teamwork at National Fintech Codeathon and 3rd Prize at Innovate Carlo Rino.' },
-  { year: '2023', title: 'Growing Portfolio', description: 'Expanded our services and delivered multiple successful projects.' },
+  { year: '2023', title: 'Digital Kampung Victory', description: 'Won 1st Prize for Digital Kampung Website for Community competition.' },
   { year: '2024', title: 'Continued Growth', description: 'Continuing to push boundaries and deliver exceptional work for our clients.' },
 ];
 
@@ -101,7 +108,7 @@ export default function Achievements() {
           <div className="container-custom">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
-                { icon: Trophy, value: '2', label: 'Awards Won' },
+                { icon: Trophy, value: '3', label: 'Awards Won' },
                 { icon: Star, value: '7+', label: 'Projects Completed' },
                 { icon: Award, value: '100%', label: 'Client Satisfaction' },
                 { icon: Medal, value: '2+', label: 'Years Experience' },

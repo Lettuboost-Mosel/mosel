@@ -1,55 +1,59 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Globe, Layout, Code2, Palette, Sparkles, CheckCircle } from 'lucide-react';
+import { ArrowRight, Check, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
-import { ServiceCard } from '@/components/ServiceCard';
 import { SectionHeader } from '@/components/SectionHeader';
 
-const services = [
+const packages = [
   {
-    title: 'Landing Page Development',
-    description: 'High-converting landing pages designed to capture attention and drive action.',
-    icon: Layout,
+    name: 'Starter',
+    price: 'RM490',
+    period: '/year',
+    description: 'Perfect for small businesses getting started online.',
     features: [
-      'Custom design tailored to your brand',
-      'Mobile-responsive layouts',
-      'SEO optimization',
-      'Fast loading speeds',
+      '1-page responsive website',
+      'Free domain 1st year',
+      'Free hosting + SSL',
+      'WhatsApp button + Google Maps',
+      'Basic SEO',
+      'Live in 3–5 days',
     ],
+    cta: 'Try Free Demo',
+    popular: false,
   },
   {
-    title: 'Business Website Development',
-    description: 'Professional websites that establish your online presence and build credibility.',
-    icon: Globe,
+    name: 'Professional',
+    price: 'RM1490',
+    period: '/year',
+    description: 'Ideal for growing businesses that need more features.',
     features: [
-      'Multi-page website structure',
-      'Content management system',
-      'Contact forms & integrations',
-      'Analytics setup',
+      'Everything in Starter',
+      'Up to 5 pages',
+      'Photo gallery / Menu',
+      'Click-to-call & WhatsApp',
+      'Social media links',
+      '1 free revision after launch',
     ],
+    cta: 'Select Plan',
+    popular: true,
   },
   {
-    title: 'Full-stack Web Development',
-    description: 'Complete web applications with robust backend systems and modern frontends.',
-    icon: Code2,
+    name: 'Business',
+    price: 'RM2990',
+    period: '/year',
+    prefix: 'From',
+    description: 'For businesses that need advanced functionality.',
     features: [
-      'Custom web applications',
-      'Database design & management',
-      'API development',
-      'User authentication',
+      'Everything in Professional',
+      'Blog / News section',
+      'Booking or simple e-commerce',
+      'Bilingual toggle (BM + English)',
+      'Unlimited text edits (1st year)',
+      'Priority WhatsApp support',
     ],
-  },
-  {
-    title: 'UI/UX Design',
-    description: 'Beautiful, intuitive interfaces that users love to interact with.',
-    icon: Palette,
-    features: [
-      'User research & analysis',
-      'Wireframing & prototyping',
-      'Visual design',
-      'Usability testing',
-    ],
+    cta: 'Select Plan',
+    popular: false,
   },
 ];
 
@@ -61,18 +65,18 @@ const process = [
   },
   {
     step: '02',
-    title: 'Planning',
-    description: 'We create a detailed roadmap and design concepts tailored to your requirements.',
+    title: 'Design',
+    description: 'We create a design concept tailored to your brand and requirements.',
   },
   {
     step: '03',
     title: 'Development',
-    description: 'Our team brings the designs to life with clean, efficient code and regular updates.',
+    description: 'Our team brings the designs to life with clean, efficient code.',
   },
   {
     step: '04',
     title: 'Launch',
-    description: 'We deploy your project and provide support to ensure a successful launch.',
+    description: 'We deploy your website and provide support to ensure a successful launch.',
   },
 ];
 
@@ -86,58 +90,65 @@ export default function Services() {
         <section className="section-padding pt-12">
           <div className="container-custom">
             <SectionHeader
-              label="Our Services"
-              title="What We Offer"
-              description="From stunning landing pages to full-stack applications, we provide comprehensive web development solutions tailored to your needs."
+              label="Our Service"
+              title="Website Building Packages"
+              description="Professional websites tailored to your business needs. Choose the package that fits you best."
             />
           </div>
         </section>
 
-        {/* Services Grid */}
+        {/* Pricing Cards */}
         <section className="section-padding pt-0">
           <div className="container-custom">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {services.map((service, index) => (
-                <ServiceCard key={service.title} {...service} index={index} />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {packages.map((pkg, index) => (
+                <div
+                  key={pkg.name}
+                  className={`p-8 rounded-2xl bg-card flex flex-col relative opacity-0 animate-fade-in-up hover-lift ${
+                    pkg.popular ? 'border-2 border-primary' : 'border border-border/50'
+                  }`}
+                  style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
+                >
+                  {pkg.popular && (
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full">
+                      Most Popular
+                    </div>
+                  )}
+                  <h3 className="text-xl font-semibold text-primary mb-2">{pkg.name}</h3>
+                  <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
+                  <div className="mb-6">
+                    {pkg.prefix && <span className="text-sm text-muted-foreground">{pkg.prefix} </span>}
+                    <span className="text-4xl font-bold">{pkg.price}</span>
+                    <span className="text-muted-foreground">{pkg.period}</span>
+                  </div>
+                  <ul className="space-y-3 mb-8 flex-grow">
+                    {pkg.features.map((feature) => (
+                      <li key={feature} className="flex items-start gap-2 text-sm">
+                        <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button asChild variant={pkg.popular ? 'hero' : 'outline'} className="w-full">
+                    <Link to="/contact">{pkg.cta}</Link>
+                  </Button>
+                </div>
               ))}
             </div>
-          </div>
-        </section>
 
-        {/* Coming Soon - Branding */}
-        <section className="section-padding bg-muted/30">
-          <div className="container-custom">
-            <div className="max-w-3xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/30 text-accent-foreground text-sm font-medium mb-6">
-                <Sparkles className="w-4 h-4" />
-                Coming Soon
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Branding Services</h2>
-              <p className="text-muted-foreground text-lg mb-8">
-                We're expanding our offerings to include comprehensive branding services. 
-                Build a cohesive brand identity that resonates with your audience.
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                {['Logo Design', 'Brand Guidelines', 'Visual Identity', 'Brand Strategy'].map((item) => (
-                  <span
-                    key={item}
-                    className="px-4 py-2 rounded-full bg-card border border-border/50 text-sm"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
+            <p className="text-center text-sm text-muted-foreground mt-8">
+              *50% deposit will be charged upon order confirmation. T&C's Apply.
+            </p>
           </div>
         </section>
 
         {/* Process */}
-        <section className="section-padding">
+        <section className="section-padding bg-muted/30">
           <div className="container-custom">
             <SectionHeader
               label="How We Work"
               title="Our Process"
-              description="A streamlined approach to delivering exceptional results."
+              description="A streamlined approach to delivering your website."
             />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -147,7 +158,6 @@ export default function Services() {
                   className="relative p-6 opacity-0 animate-fade-in-up"
                   style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
                 >
-                  {/* Connector Line */}
                   {index < process.length - 1 && (
                     <div className="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-border -translate-x-1/2" />
                   )}
@@ -164,7 +174,7 @@ export default function Services() {
         </section>
 
         {/* Why Choose Us */}
-        <section className="section-padding bg-muted/30">
+        <section className="section-padding">
           <div className="container-custom">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
@@ -181,7 +191,7 @@ export default function Services() {
                   {[
                     'Dedicated attention to every project',
                     'Transparent communication throughout',
-                    'Modern technologies and best practices',
+                    'Fast turnaround times',
                     'Competitive pricing with no hidden costs',
                     'Ongoing support after launch',
                   ].map((item, index) => (
@@ -217,7 +227,7 @@ export default function Services() {
               Ready to Get Started?
             </h2>
             <p className="text-background/70 text-lg max-w-xl mx-auto mb-8">
-              Let's discuss your project and find the perfect solution for your needs.
+              Let's discuss your project and find the perfect package for your needs.
             </p>
             <Button asChild variant="hero" size="lg">
               <Link to="/contact">
