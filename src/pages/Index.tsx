@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Sparkles, Code2, Palette, Trophy, Award, Medal } from 'lucide-react';
+import { ArrowRight, Sparkles, Trophy, Award, Medal, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
@@ -18,14 +18,13 @@ const achievements = [
     title: '3rd Prize',
     event: 'Innovate Carlo Rino UPM UI/UX',
   },
+  {
+    icon: Award,
+    title: '1st Winning Prize',
+    event: 'Digital Kampung Website for Community',
+  },
 ];
 
-const stats = [
-  { value: '7+', label: 'Projects Delivered' },
-  { value: '100%', label: 'Client Satisfaction' },
-  { value: '2+', label: 'Years Experience' },
-  { value: '2', label: 'Awards Won' },
-];
 
 export default function Index() {
   return (
@@ -88,32 +87,13 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 border-y border-border/50 bg-muted/30">
-        <div className="container-custom px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div
-                key={stat.label}
-                className="text-center opacity-0 animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
-              >
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-muted-foreground">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Featured Projects Section */}
       <section className="section-padding">
         <div className="container-custom">
           <SectionHeader
             label="Our Work"
-            title="Featured Projects"
+            title="Projects"
             description="Explore our latest work and see how we've helped businesses transform their digital presence."
           />
 
@@ -134,43 +114,84 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Services Preview */}
+      {/* Website Packages Section */}
       <section className="section-padding bg-muted/30">
         <div className="container-custom">
           <SectionHeader
-            label="What We Do"
-            title="Our Services"
-            description="We offer a comprehensive range of web development and design services to bring your vision to life."
+            label="Pricing"
+            title="Our Website Packages"
+            description="Choose the perfect package for your business needs."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { icon: Code2, title: 'Full-stack Development', desc: 'Complete web applications with modern technologies' },
-              { icon: Palette, title: 'UI/UX Design', desc: 'Beautiful, intuitive interfaces that users love' },
-              { icon: Sparkles, title: 'Landing Pages', desc: 'High-converting pages that capture attention' },
-            ].map((service, index) => (
-              <div
-                key={service.title}
-                className="p-8 rounded-2xl bg-card border border-border/50 hover-lift opacity-0 animate-fade-in-up"
-                style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
-              >
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-                  <service.icon className="w-7 h-7 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                <p className="text-muted-foreground">{service.desc}</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {/* Starter Package */}
+            <div className="p-8 rounded-2xl bg-card border border-border/50 hover-lift opacity-0 animate-fade-in-up flex flex-col" style={{ animationDelay: '0ms', animationFillMode: 'forwards' }}>
+              <h3 className="text-xl font-semibold text-primary mb-4">Starter</h3>
+              <div className="mb-6">
+                <span className="text-3xl font-bold">RM490</span>
+                <span className="text-muted-foreground">/year</span>
               </div>
-            ))}
+              <ul className="space-y-3 mb-8 flex-grow">
+                {['1-page responsive website', 'Free domain 1st year', 'Free hosting + SSL', 'WhatsApp button + Google Maps', 'Basic SEO', 'Live in 3–5 days'].map((feature) => (
+                  <li key={feature} className="flex items-start gap-2 text-sm">
+                    <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <Button asChild variant="outline" className="w-full">
+                <Link to="/contact">Try Free Demo</Link>
+              </Button>
+            </div>
+
+            {/* Professional Package */}
+            <div className="p-8 rounded-2xl bg-card border-2 border-primary hover-lift opacity-0 animate-fade-in-up flex flex-col relative" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full">
+                Most Popular
+              </div>
+              <h3 className="text-xl font-semibold text-primary mb-4">Professional</h3>
+              <div className="mb-6">
+                <span className="text-3xl font-bold">RM1490</span>
+                <span className="text-muted-foreground">/year</span>
+              </div>
+              <ul className="space-y-3 mb-8 flex-grow">
+                {['Everything in Starter', 'Up to 5 pages', 'Photo gallery / Menu', 'Click-to-call & WhatsApp', 'Social media links', '1 free revision after launch'].map((feature) => (
+                  <li key={feature} className="flex items-start gap-2 text-sm">
+                    <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <Button asChild variant="hero" className="w-full">
+                <Link to="/contact">Select Plan</Link>
+              </Button>
+            </div>
+
+            {/* Business Package */}
+            <div className="p-8 rounded-2xl bg-card border border-border/50 hover-lift opacity-0 animate-fade-in-up flex flex-col" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+              <h3 className="text-xl font-semibold text-primary mb-4">Business</h3>
+              <div className="mb-6">
+                <span className="text-sm text-muted-foreground">From </span>
+                <span className="text-3xl font-bold">RM2990</span>
+                <span className="text-muted-foreground">/year</span>
+              </div>
+              <ul className="space-y-3 mb-8 flex-grow">
+                {['Everything in Professional', 'Blog / News section', 'Booking or simple e-commerce', 'Bilingual toggle (BM + English)', 'Unlimited text edits (1st year)', 'Priority WhatsApp support'].map((feature) => (
+                  <li key={feature} className="flex items-start gap-2 text-sm">
+                    <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <Button asChild variant="outline" className="w-full">
+                <Link to="/contact">Select Plan</Link>
+              </Button>
+            </div>
           </div>
 
-          <div className="text-center mt-12">
-            <Button asChild variant="hero" size="lg">
-              <Link to="/services">
-                Explore All Services
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </Button>
-          </div>
+          <p className="text-center text-sm text-muted-foreground mt-8">
+            *50% deposit will be charged upon order confirmation. T&C's Apply.
+          </p>
         </div>
       </section>
 
@@ -183,7 +204,7 @@ export default function Index() {
             description="We're proud of our accomplishments and the recognition we've received."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {achievements.map((achievement, index) => (
               <div
                 key={achievement.title}
