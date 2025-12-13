@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, ExternalLink, Github, Figma, Play } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Github, Figma } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Navbar } from '@/components/Navbar';
@@ -86,55 +86,17 @@ export default function ProjectDetail() {
           </div>
         </section>
 
-        {/* Thumbnail */}
-        <section className="container-custom px-4 sm:px-6 lg:px-8 pb-16">
-          <div className="rounded-2xl overflow-hidden border border-border/50 animate-fade-in-up">
-            <img
-              src={project.thumbnail}
-              alt={project.title}
-              className="w-full aspect-video object-cover"
-            />
-          </div>
-        </section>
-
-        {/* Problem → Solution → Result */}
-        <section className="section-padding bg-muted/30">
-          <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {[
-                { title: 'The Problem', content: project.problem, color: 'text-destructive' },
-                { title: 'Our Solution', content: project.solution, color: 'text-primary' },
-                { title: 'The Result', content: project.result, color: 'text-green-600' },
-              ].map((item, index) => (
-                <div
-                  key={item.title}
-                  className="p-8 rounded-2xl bg-card border border-border/50 opacity-0 animate-fade-in-up"
-                  style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
-                >
-                  <span className={`text-sm font-semibold ${item.color} mb-2 block`}>
-                    {String(index + 1).padStart(2, '0')}
-                  </span>
-                  <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{item.content}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Video Embed (Placeholder) */}
+        {/* Video Demo */}
         {project.videoUrl && (
-          <section className="section-padding">
-            <div className="container-custom">
-              <h2 className="text-2xl font-semibold mb-6">Project Demo</h2>
-              <div className="aspect-video rounded-2xl bg-muted border border-border/50 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                    <Play className="w-8 h-8 text-primary" />
-                  </div>
-                  <p className="text-muted-foreground">Video demo available</p>
-                </div>
-              </div>
+          <section className="container-custom px-4 sm:px-6 lg:px-8 pb-16">
+            <div className="rounded-2xl overflow-hidden border border-border/50 animate-fade-in-up">
+              <iframe
+                src={project.videoUrl.replace('youtu.be/', 'www.youtube.com/embed/').replace('watch?v=', 'embed/').split('?')[0]}
+                title={`${project.title} Demo`}
+                className="w-full aspect-video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </section>
         )}
