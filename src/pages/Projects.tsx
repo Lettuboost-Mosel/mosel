@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 
 type Category = 'All' | Project['category'];
 
-const categories: Category[] = ['All', 'Web', 'Landing', 'App'];
+const categories: Category[] = ['All', 'Web', 'Landing', 'App', 'UI/UX'];
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState<Category>('All');
@@ -27,7 +27,7 @@ export default function Projects() {
           <div className="container-custom">
             <SectionHeader
               label="Our Portfolio"
-              title="Projects We've Built"
+              title="Projects Delivered"
               description="Explore our collection of web applications, landing pages, and digital experiences we've crafted for our clients."
             />
 

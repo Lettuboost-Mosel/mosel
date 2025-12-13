@@ -93,7 +93,7 @@ export default function Index() {
         <div className="container-custom">
           <SectionHeader
             label="Our Work"
-            title="Projects"
+            title="Projects Delivered"
             description="Explore our latest work and see how we've helped businesses transform their digital presence."
           />
 
