@@ -29,16 +29,14 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
       )}
       style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
     >
-      {/* Thumbnail - only show if video exists */}
-      {thumbnail && (
-        <div className="aspect-[16/10] overflow-hidden">
-          <img
-            src={thumbnail}
-            alt={project.title}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-        </div>
-      )}
+      {/* Thumbnail */}
+      <div className="aspect-[16/10] overflow-hidden bg-muted">
+        <img
+          src={thumbnail || '/placeholder.svg'}
+          alt={project.title}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      </div>
 
       {/* Content */}
       <div className="p-6">
