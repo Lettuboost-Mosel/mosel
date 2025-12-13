@@ -9,7 +9,17 @@ interface ProjectCardProps {
   index?: number;
 }
 
+function getYouTubeThumbnail(videoUrl: string): string | null {
+  const match = videoUrl.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([^?&]+)/);
+  if (match && match[1]) {
+    return `https://img.youtube.com/vi/${match[1]}/hqdefault.jpg`;
+  }
+  return null;
+}
+
 export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
+  const thumbnail = project.videoUrl ? getYouTubeThumbnail(project.videoUrl) : null;
+
   return (
     <Link
       to={`/projects/${project.id}`}
@@ -19,14 +29,16 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
       )}
       style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
     >
-      {/* Thumbnail */}
-      <div className="aspect-[16/10] overflow-hidden">
-        <img
-          src={project.thumbnail}
-          alt={project.title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-      </div>
+      {/* Thumbnail - only show if video exists */}
+      {thumbnail && (
+        <div className="aspect-[16/10] overflow-hidden">
+          <img
+            src={thumbnail}
+            alt={project.title}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
+      )}
 
       {/* Content */}
       <div className="p-6">
