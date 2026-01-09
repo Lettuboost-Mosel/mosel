@@ -111,7 +111,7 @@ export default function Services() {
                 >
                   {pkg.popular && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full">
-                      Most Popular
+                      Recommended
                     </div>
                   )}
                   <h3 className="text-xl font-semibold text-primary mb-2">{pkg.name}</h3>

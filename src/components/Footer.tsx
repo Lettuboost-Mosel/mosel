@@ -12,7 +12,6 @@ const footerLinks = {
     { href: '/services', label: 'Landing Pages' },
     { href: '/services', label: 'Business Websites' },
     { href: '/services', label: 'Full-stack Development' },
-    { href: '/services', label: 'UI/UX Design' },
   ],
 };
 

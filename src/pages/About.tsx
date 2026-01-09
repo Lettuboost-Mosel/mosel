@@ -6,36 +6,41 @@ import { Footer } from '@/components/Footer';
 import { TeamMember } from '@/components/TeamMember';
 import { SectionHeader } from '@/components/SectionHeader';
 
+
+import zulAbout from "../assets/images/zul-about.jpeg";
+import shahrilAbout from "../assets/images/shahril-about.jpeg";
+import hazimAbout from "../assets/images/hazim-about.png";
+
 const team = [
   {
-    name: 'Alex Chen',
-    role: 'Founder & Lead Developer',
+    name: 'Zulhilmi Reduan',
+    role: 'Founder & Coordinator',
     bio: 'Full-stack developer with a passion for creating elegant solutions to complex problems.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
+    image: zulAbout,
     socials: {
-      linkedin: 'https://linkedin.com',
+      linkedin: 'https://www.linkedin.com/in/zulhilmi-reduan-015381227/',
       github: 'https://github.com',
       twitter: 'https://twitter.com',
     },
   },
   {
-    name: 'Sarah Williams',
-    role: 'UI/UX Designer',
+    name: 'Shahril',
+    role: 'Project Manager & Developer',
     bio: 'Creative designer focused on crafting beautiful, user-centered digital experiences.',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80',
+    image: shahrilAbout,
     socials: {
       linkedin: 'https://linkedin.com',
       twitter: 'https://twitter.com',
     },
   },
   {
-    name: 'David Park',
-    role: 'Backend Developer',
+    name: 'Hazim Danish',
+    role: 'Full-Stack Developer',
     bio: 'Systems architect specializing in scalable backend solutions and database optimization.',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80',
+    image: hazimAbout,
     socials: {
-      linkedin: 'https://linkedin.com',
-      github: 'https://github.com',
+      linkedin: 'https://www.linkedin.com/in/hazim-danish-523341287/',
+      github: 'https://github.com/HazimDanish16',
     },
   },
 ];
@@ -80,9 +85,9 @@ export default function About() {
                 We Build Digital <span className="text-gradient">Experiences</span>
               </h1>
             <p className="text-xl text-muted-foreground leading-relaxed animate-fade-in" style={{ animationDelay: '200ms' }}>
-              Mosel is a web development studio dedicated to transforming ideas into 
-              beautiful, functional digital solutions. We combine creativity with 
-              technical expertise to help you sell more.
+              Mosel designs and builds landing pages engineered to turn visitors into leads and customers.
+            We focus on clear messaging, conversion-driven UX, and fast performance — so every click
+            moves users closer to action.
             </p>
             </div>
           </div>
