@@ -103,6 +103,7 @@ export const projects: Project[] = [
     result: '',
     technologies: ['React', 'Tailwind CSS', 'Vite'],
     year: 2024,
+    videoUrl: 'https://youtu.be/CvZNXFlvzko',
     liveUrl: 'https://lettuboost.com',
   },
   {
