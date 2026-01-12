@@ -18,7 +18,9 @@ function getYouTubeThumbnail(videoUrl: string): string | null {
 }
 
 export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
-  const thumbnail = project.videoUrl ? getYouTubeThumbnail(project.videoUrl) : null;
+  const thumbnail =
+    project.thumbnail ||
+    (project.videoUrl ? getYouTubeThumbnail(project.videoUrl) : null);
 
   return (
     <Link

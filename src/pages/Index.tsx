@@ -57,9 +57,9 @@ export default function Index() {
             </p>
 
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: '300ms' }}>
-              We transform your ideas into beautiful, functional web solutions. 
-              From stunning landing pages to full-stack applications, we build 
-              digital experiences that leave a lasting impression.
+              Mosel designs and builds high-converting landing pages for businesses that want real results.
+              We focus on clear messaging, conversion-driven UX, and fast performance — so every visitor
+              knows what to do next.
             </p>
 
             {/* CTAs */}

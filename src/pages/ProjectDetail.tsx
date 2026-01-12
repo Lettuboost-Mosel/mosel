@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Github, Figma } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { projects } from '@/data/projects';
@@ -9,6 +11,15 @@ import { projects } from '@/data/projects';
 export default function ProjectDetail() {
   const { id } = useParams<{ id: string }>();
   const project = projects.find(p => p.id === id);
+  const [viewerOpen, setViewerOpen] = useState(false);
+  const [activeImage, setActiveImage] = useState<string | null>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleOpenViewer = (image: string, index: number) => {
+    setActiveImage(image);
+    setActiveIndex(index);
+    setViewerOpen(true);
+  };
 
   if (!project) {
     return (
@@ -100,6 +111,43 @@ export default function ProjectDetail() {
             </div>
           </section>
         )}
+
+        {/* Project Images */}
+        {project.images && project.images.length > 0 && (
+          <section className="container-custom px-4 sm:px-6 lg:px-8 pb-16">
+            <h2 className="text-2xl font-semibold mb-6">Gallery</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {project.images.map((image, index) => (
+                <button
+                  key={`${project.id}-image-${index}`}
+                  type="button"
+                  onClick={() => handleOpenViewer(image, index)}
+                  className="group rounded-2xl overflow-hidden border border-border/50 bg-muted text-left transition hover:border-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                >
+                  <img
+                    src={image}
+                    alt={`${project.title} gallery image ${index + 1}`}
+                    className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+                  />
+                </button>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <Dialog open={viewerOpen} onOpenChange={setViewerOpen}>
+          <DialogContent className="max-w-6xl border-0 bg-black/90 p-4 text-white shadow-none">
+            {activeImage && (
+              <div className="flex h-[80vh] w-full items-center justify-center">
+                <img
+                  src={activeImage}
+                  alt={`${project.title} gallery image ${activeIndex + 1}`}
+                  className="max-h-full max-w-full rounded-lg object-contain"
+                />
+              </div>
+            )}
+          </DialogContent>
+        </Dialog>
 
         {/* Technologies */}
         <section className="section-padding">
