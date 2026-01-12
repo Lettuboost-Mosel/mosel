@@ -101,6 +101,27 @@ export default function ProjectDetail() {
           </section>
         )}
 
+        {/* Project Images */}
+        {project.images && project.images.length > 0 && (
+          <section className="container-custom px-4 sm:px-6 lg:px-8 pb-16">
+            <h2 className="text-2xl font-semibold mb-6">Gallery</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {project.images.map((image, index) => (
+                <div
+                  key={`${project.id}-image-${index}`}
+                  className="rounded-2xl overflow-hidden border border-border/50 bg-muted"
+                >
+                  <img
+                    src={image}
+                    alt={`${project.title} gallery image ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Technologies */}
         <section className="section-padding">
           <div className="container-custom">
