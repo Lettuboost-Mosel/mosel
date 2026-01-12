@@ -105,7 +105,7 @@ export const projects: Project[] = [
     tagline: 'Sustainability innovation website',
     category: 'Landing',
     thumbnail: lettuboostThumbnail,
-    description: 'Lettuboost needed a professional online presence to communicate a complex sustainability concept clearly to judges, partners, and the public. Designed and developed a minimal, content-focused website that simplifies the project narrative, highlights innovation, and strengthens credibility through clean layout and intuitive information flow. A clear and professional digital presence that supports outreach, storytelling, and competition exposure.',
+    description: '“Designed and built the Lettuboost website to clearly communicate a sustainable agri‑tech solution that turns invasive water lettuce into selenium‑enriched fish feed. The page distills the problem, highlights benefits like lower feed costs and improved fish growth, and reinforces the circular‑economy story with clean visual hierarchy and focused copy. The result is a credible, competition‑ready digital presence that supports outreach to judges, partners, and the public.”',
     problem: '',
     solution: '',
     result: '',
