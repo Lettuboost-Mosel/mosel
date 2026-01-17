@@ -53,7 +53,7 @@ const packages = [
       'Priority WhatsApp support',
     ],
     cta: 'Select Plan',
-    hoverLabel: 'Full-Stacked Website',
+    hoverLabel: 'Full-stack Website',
   },
 ];
 
@@ -125,7 +125,7 @@ export default function Services() {
                       </li>
                     ))}
                   </ul>
-                  <Button asChild variant="outline" className="w-full">
+                  <Button asChild variant="outline" className="w-full hover:bg-primary hover:text-primary-foreground hover:border-primary">
                     <Link to="/contact">{pkg.cta}</Link>
                   </Button>
                 </div>
