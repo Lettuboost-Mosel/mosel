@@ -94,7 +94,7 @@ export default function Index() {
           <SectionHeader
             label="Our Work"
             title="Projects Delivered"
-            description="Explore our latest work and see how we've helped businesses transform their digital presence."
+            description="Explore our previous works delivered."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
