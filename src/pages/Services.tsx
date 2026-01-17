@@ -30,8 +30,9 @@ const packages = [
     description: 'Ideal for growing businesses that need more features.',
     features: [
       'Everything in Starter',
-      'Up to 5 pages',
-      'Photo gallery / Menu',
+      'Multiple pages',
+      'Photo / Video gallery',
+      'Chatbot integration',
       'Click-to-call & WhatsApp',
       '1 free revision after launch',
     ],
