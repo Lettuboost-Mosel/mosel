@@ -28,7 +28,7 @@ export default function Projects() {
             <SectionHeader
               label="Our Portfolio"
               title="Projects Delivered"
-              description="Explore our collection of web applications, landing pages, and digital experiences we've crafted for our clients."
+              description="Explore our collection of web applications, landing pages, and digital works we've crafted."
             />
 
             {/* Filter */}

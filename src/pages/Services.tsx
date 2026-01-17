@@ -19,7 +19,7 @@ const packages = [
       'Basic SEO',
       'Live in 3–5 days',
     ],
-    cta: 'Try Free Demo',
+    cta: 'Select Plan',
     hoverLabel: 'Simple Landing Page',
   },
   {
@@ -234,7 +234,7 @@ export default function Services() {
               Ready to Get Started?
             </h2>
             <p className="text-background/70 text-lg max-w-xl mx-auto mb-8">
-              Let's discuss your project and find the perfect package for your needs.
+              Let's discuss your project/business and find the perfect package for your needs.
             </p>
             <Button asChild variant="hero" size="lg">
               <Link to="/contact">
