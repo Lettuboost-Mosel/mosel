@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, Send, Github, Linkedin, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -26,7 +26,7 @@ const contactInfo = [
 const socialLinks = [
   { icon: Github, href: 'https://github.com', label: 'GitHub' },
   { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
 ];
 
 export default function Contact() {
