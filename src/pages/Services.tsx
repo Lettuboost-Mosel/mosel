@@ -20,7 +20,7 @@ const packages = [
       'Live in 3–5 days',
     ],
     cta: 'Try Free Demo',
-    popular: false,
+    hoverLabel: 'Simple Landing Page',
   },
   {
     name: 'Professional',
@@ -36,7 +36,7 @@ const packages = [
       '1 free revision after launch',
     ],
     cta: 'Select Plan',
-    popular: true,
+    hoverLabel: 'Professional Landing Pages',
   },
   {
     name: 'Business',
@@ -53,7 +53,7 @@ const packages = [
       'Priority WhatsApp support',
     ],
     cta: 'Select Plan',
-    popular: false,
+    hoverLabel: 'Full-Stacked Website',
   },
 ];
 
@@ -104,16 +104,12 @@ export default function Services() {
               {packages.map((pkg, index) => (
                 <div
                   key={pkg.name}
-                  className={`p-8 rounded-2xl bg-card flex flex-col relative opacity-0 animate-fade-in-up hover-lift ${
-                    pkg.popular ? 'border-2 border-primary' : 'border border-border/50'
-                  }`}
+                  className="p-8 rounded-2xl bg-card flex flex-col relative opacity-0 animate-fade-in-up border border-border/50 transition-all duration-300 hover:border-primary group"
                   style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
                 >
-                  {pkg.popular && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full">
-                      Recommended
-                    </div>
-                  )}
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                    {pkg.hoverLabel}
+                  </div>
                   <h3 className="text-xl font-semibold text-primary mb-2">{pkg.name}</h3>
                   <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
                   <div className="mb-6">
@@ -129,7 +125,7 @@ export default function Services() {
                       </li>
                     ))}
                   </ul>
-                  <Button asChild variant={pkg.popular ? 'hero' : 'outline'} className="w-full">
+                  <Button asChild variant="outline" className="w-full">
                     <Link to="/contact">{pkg.cta}</Link>
                   </Button>
                 </div>
