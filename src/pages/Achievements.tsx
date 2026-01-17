@@ -65,68 +65,6 @@ export default function Achievements() {
           </div>
         </section>
 
-        {/* Milestones */}
-        <section className="section-padding bg-muted/30">
-          <div className="container-custom">
-            <SectionHeader
-              label="Our Journey"
-              title="Key Milestones"
-              description="A timeline of our growth and achievements over the years."
-            />
-
-            <div className="max-w-3xl mx-auto">
-              {milestones.map((milestone, index) => (
-                <div
-                  key={milestone.year + milestone.title}
-                  className="relative pl-8 pb-12 last:pb-0 opacity-0 animate-fade-in-up"
-                  style={{ animationDelay: `${index * 150}ms`, animationFillMode: 'forwards' }}
-                >
-                  {/* Line */}
-                  {index < milestones.length - 1 && (
-                    <div className="absolute left-[11px] top-6 bottom-0 w-0.5 bg-border" />
-                  )}
-                  
-                  {/* Dot */}
-                  <div className="absolute left-0 top-1.5 w-6 h-6 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center">
-                    <div className="w-2 h-2 rounded-full bg-primary" />
-                  </div>
-
-                  {/* Content */}
-                  <div className="p-6 rounded-2xl bg-card border border-border/50">
-                    <span className="text-primary font-semibold">{milestone.year}</span>
-                    <h3 className="text-xl font-semibold mt-1 mb-2">{milestone.title}</h3>
-                    <p className="text-muted-foreground">{milestone.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Stats */}
-        <section className="section-padding">
-          <div className="container-custom">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {[
-                { icon: Trophy, value: '3', label: 'Awards Won' },
-                { icon: Star, value: '7+', label: 'Projects Completed' },
-                { icon: Award, value: '100%', label: 'Client Satisfaction' },
-                { icon: Medal, value: '2+', label: 'Years Experience' },
-              ].map((stat, index) => (
-                <div
-                  key={stat.label}
-                  className="text-center p-6 rounded-2xl bg-card border border-border/50 opacity-0 animate-fade-in-up"
-                  style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
-                >
-                  <stat.icon className="w-8 h-8 text-primary mx-auto mb-4" />
-                  <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
-                  <div className="text-muted-foreground text-sm">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* CTA */}
         <section className="section-padding bg-foreground text-background">
           <div className="container-custom text-center">
