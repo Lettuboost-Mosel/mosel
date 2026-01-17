@@ -193,7 +193,7 @@ export default function Services() {
                     'Transparent communication throughout',
                     'Fast turnaround times',
                     'Competitive pricing with no hidden costs',
-                    'Ongoing 1 year free maintenance and support after launch',
+                    '1 year free maintenance and support after launch',
                   ].map((item, index) => (
                     <div
                       key={item}
