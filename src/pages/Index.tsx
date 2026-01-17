@@ -201,7 +201,7 @@ export default function Index() {
           <SectionHeader
             label="Recognition"
             title="Our Achievements"
-            description="We're proud of our accomplishments and the recognition we've received."
+            description="Awards and achievements accomplished by our team members!"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
