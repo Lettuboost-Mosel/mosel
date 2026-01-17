@@ -87,7 +87,7 @@ export default function Services() {
       
       <main className="pt-24">
         {/* Hero */}
-        <section className="section-padding pt-12">
+        <section className="pt-12 pb-8">
           <div className="container-custom">
             <SectionHeader
               label="Our Service"
