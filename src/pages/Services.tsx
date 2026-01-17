@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Check, CheckCircle } from 'lucide-react';
+import { ArrowRight, Check, Heart, MessageSquare, Zap, DollarSign, Shield, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
@@ -176,46 +176,57 @@ export default function Services() {
         {/* Why Choose Us */}
         <section className="section-padding">
           <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div>
-                <span className="text-primary font-medium mb-4 block">Why Mosel</span>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Why Us?
-                </h2>
-                <p className="text-muted-foreground mb-8">
-                  We're not just developers – we're partners invested in your success. 
-                  Here's what sets us apart.
-                </p>
+            <SectionHeader
+              label="Why Mosel"
+              title="Why Us?"
+              description="We're not just developers – we're partners invested in your success."
+            />
 
-                <div className="space-y-4">
-                  {[
-                    'Dedicated attention to every project',
-                    'Transparent communication throughout',
-                    'Fast turnaround times',
-                    'Competitive pricing with no hidden costs',
-                    '1 year free maintenance and support after launch',
-                  ].map((item, index) => (
-                    <div
-                      key={item}
-                      className="flex items-center gap-3 opacity-0 animate-fade-in"
-                      style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
-                    >
-                      <CheckCircle className="w-5 h-5 text-primary shrink-0" />
-                      <span>{item}</span>
-                    </div>
-                  ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {[
+                {
+                  icon: Heart,
+                  title: 'Dedicated Attention',
+                  description: 'Every project gets our full focus and commitment to excellence.',
+                },
+                {
+                  icon: MessageSquare,
+                  title: 'Transparent Communication',
+                  description: 'Clear updates and honest conversations throughout the process.',
+                },
+                {
+                  icon: Zap,
+                  title: 'Fast Turnaround',
+                  description: 'Quick delivery without compromising on quality.',
+                },
+                {
+                  icon: DollarSign,
+                  title: 'No Hidden Costs',
+                  description: 'Competitive pricing with everything included upfront.',
+                },
+                {
+                  icon: Shield,
+                  title: '1 Year Free Support',
+                  description: 'Maintenance and support included after launch.',
+                },
+                {
+                  icon: Sparkles,
+                  title: 'Modern & Clean',
+                  description: 'Contemporary designs that stand out from the crowd.',
+                },
+              ].map((item, index) => (
+                <div
+                  key={item.title}
+                  className="p-6 rounded-2xl bg-card border border-border/50 opacity-0 animate-fade-in-up hover-lift"
+                  style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
+                >
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <item.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm">{item.description}</p>
                 </div>
-              </div>
-
-              <div className="relative opacity-0 animate-fade-in-up" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                <div className="aspect-square rounded-2xl overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
-                    alt="Development workspace"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
