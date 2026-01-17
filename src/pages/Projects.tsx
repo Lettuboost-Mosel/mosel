@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 
 type Category = 'All' | Project['category'];
 
-const categories: Category[] = ['All', 'Web', 'Landing', 'App', 'UI/UX'];
+const categories: Category[] = ['All', 'Web', 'Landing', 'UI/UX'];
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState<Category>('All');
