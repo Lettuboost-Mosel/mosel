@@ -31,7 +31,7 @@ const packages = [
     features: [
       'Everything in Starter',
       'Multiple pages',
-      'Photo / Video gallery',
+      'Photo Gallery / Video Gallery / Menu',
       'Chatbot integration',
       'Click-to-call & WhatsApp',
       '1 free revision after launch',
