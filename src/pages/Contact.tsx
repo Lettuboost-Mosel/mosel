@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, Send, Github, Linkedin, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -20,12 +20,6 @@ const contactInfo = [
     label: 'WhatsApp',
     value: '+60 12-345 6789',
     href: 'https://wa.me/60123456789',
-  },
-  {
-    icon: MapPin,
-    label: 'Location',
-    value: 'Kuala Lumpur, Malaysia',
-    href: null,
   },
 ];
 
@@ -206,13 +200,6 @@ export default function Contact() {
                   </div>
                 </div>
 
-                {/* Map Placeholder */}
-                <div className="mt-8 rounded-2xl overflow-hidden border border-border/50 aspect-video bg-muted flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
-                    <p className="text-muted-foreground">Kuala Lumpur, Malaysia</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
