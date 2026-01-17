@@ -15,12 +15,12 @@ const achievements = [
   },
   {
     icon: Medal,
-    title: '3rd Prize',
+    title: '3rd Prize Winner',
     event: 'Innovate Carlo Rino UPM UI/UX',
   },
   {
     icon: Award,
-    title: '1st Winning Prize',
+    title: '1st Prize Winner',
     event: 'Digital Kampung Website for Community',
   },
 ];
