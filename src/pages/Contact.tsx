@@ -222,7 +222,7 @@ export default function Contact() {
                 },
                 {
                   q: 'Do you offer ongoing maintenance?',
-                  a: 'Yes, we offer maintenance packages to keep your website updated, secure, and performing optimally after launch.',
+                  a: 'Yes, we offer 1 year free maintenance to keep your website updated, secure, and performing optimally after launch.',
                 },
                 {
                   q: 'What technologies do you work with?',
