@@ -180,7 +180,7 @@ export default function Services() {
               <div>
                 <span className="text-primary font-medium mb-4 block">Why Mosel</span>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Why Choose Us?
+                  Why Us?
                 </h2>
                 <p className="text-muted-foreground mb-8">
                   We're not just developers – we're partners invested in your success. 
