@@ -52,7 +52,7 @@ export default function Index() {
               <span className="text-gradient">Mosel</span>
             </h1>
             
-            <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-muted-foreground mb-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
+            <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
               Landing pages for more sales
             </p>
 
