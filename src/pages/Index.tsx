@@ -118,69 +118,86 @@ export default function Index() {
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* Starter Package */}
-            <div className="p-8 rounded-2xl bg-card border border-border/50 hover-lift opacity-0 animate-fade-in-up flex flex-col" style={{ animationDelay: '0ms', animationFillMode: 'forwards' }}>
-              <h3 className="text-xl font-semibold text-primary mb-4">Starter</h3>
-              <div className="mb-6">
-                <span className="text-3xl font-bold">RM490</span>
-                <span className="text-muted-foreground">/year</span>
+            {[
+              {
+                name: 'Starter',
+                price: 'RM490',
+                period: '/year',
+                description: 'Perfect for small businesses getting started online.',
+                features: [
+                  '1-page responsive website',
+                  'Free domain 1st year',
+                  'Free hosting + SSL',
+                  'WhatsApp button + Google Maps',
+                  'Social media links',
+                  'Basic SEO',
+                  'Live in 3–5 days',
+                ],
+                cta: 'Select Plan',
+                hoverLabel: 'Simple Landing Page',
+              },
+              {
+                name: 'Professional',
+                price: 'RM1490',
+                period: '/year',
+                description: 'Ideal for growing businesses that need more features.',
+                features: [
+                  'Everything in Starter',
+                  'Multiple pages',
+                  'Photo Gallery / Video Gallery / Menu',
+                  'SEO Optimization',
+                  'Click-to-call & WhatsApp',
+                  '1 free revision after launch',
+                ],
+                cta: 'Select Plan',
+                hoverLabel: 'Professional Landing Pages',
+              },
+              {
+                name: 'Business',
+                price: 'RM2990',
+                period: '/year',
+                prefix: 'From',
+                description: 'For businesses that need advanced functionality.',
+                features: [
+                  'Everything in Professional',
+                  'Blog / News section',
+                  'Booking or simple e-commerce',
+                  'Bilingual toggle (BM + English)',
+                  'Unlimited text edits (1st year)',
+                  'Priority WhatsApp support',
+                ],
+                cta: 'Select Plan',
+                hoverLabel: 'Full-stack Website',
+              },
+            ].map((pkg, index) => (
+              <div
+                key={pkg.name}
+                className="p-8 rounded-2xl bg-card flex flex-col relative opacity-0 animate-fade-in-up border border-border/50 transition-all duration-300 hover:border-primary group"
+                style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
+              >
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                  {pkg.hoverLabel}
+                </div>
+                <h3 className="text-xl font-semibold text-primary mb-2">{pkg.name}</h3>
+                <p className="text-sm text-muted-foreground mb-4">{pkg.description}</p>
+                <div className="mb-6">
+                  {pkg.prefix && <span className="text-sm text-muted-foreground">{pkg.prefix} </span>}
+                  <span className="text-4xl font-bold">{pkg.price}</span>
+                  <span className="text-muted-foreground">{pkg.period}</span>
+                </div>
+                <ul className="space-y-3 mb-8 flex-grow">
+                  {pkg.features.map((feature) => (
+                    <li key={feature} className="flex items-start gap-2 text-sm">
+                      <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button asChild variant="outline" className="w-full hover:bg-primary hover:text-primary-foreground hover:border-primary">
+                  <Link to="/contact">{pkg.cta}</Link>
+                </Button>
               </div>
-              <ul className="space-y-3 mb-8 flex-grow">
-                {['1-page responsive website', 'Free domain 1st year', 'Free hosting + SSL', 'WhatsApp button + Google Maps', 'Basic SEO', 'Live in 3–5 days'].map((feature) => (
-                  <li key={feature} className="flex items-start gap-2 text-sm">
-                    <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              <Button asChild variant="outline" className="w-full">
-                <Link to="/contact">Try Free Demo</Link>
-              </Button>
-            </div>
-
-            {/* Professional Package */}
-            <div className="p-8 rounded-2xl bg-card border-2 border-primary hover-lift opacity-0 animate-fade-in-up flex flex-col relative" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full">
-                Most Popular
-              </div>
-              <h3 className="text-xl font-semibold text-primary mb-4">Professional</h3>
-              <div className="mb-6">
-                <span className="text-3xl font-bold">RM1490</span>
-                <span className="text-muted-foreground">/year</span>
-              </div>
-              <ul className="space-y-3 mb-8 flex-grow">
-                {['Everything in Starter', 'Up to 5 pages', 'Photo gallery / Menu', 'Click-to-call & WhatsApp', 'Social media links', '1 free revision after launch'].map((feature) => (
-                  <li key={feature} className="flex items-start gap-2 text-sm">
-                    <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              <Button asChild variant="hero" className="w-full">
-                <Link to="/contact">Select Plan</Link>
-              </Button>
-            </div>
-
-            {/* Business Package */}
-            <div className="p-8 rounded-2xl bg-card border border-border/50 hover-lift opacity-0 animate-fade-in-up flex flex-col" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-              <h3 className="text-xl font-semibold text-primary mb-4">Business</h3>
-              <div className="mb-6">
-                <span className="text-sm text-muted-foreground">From </span>
-                <span className="text-3xl font-bold">RM2990</span>
-                <span className="text-muted-foreground">/year</span>
-              </div>
-              <ul className="space-y-3 mb-8 flex-grow">
-                {['Everything in Professional', 'Blog / News section', 'Booking or simple e-commerce', 'Bilingual toggle (BM + English)', 'Unlimited text edits (1st year)', 'Priority WhatsApp support'].map((feature) => (
-                  <li key={feature} className="flex items-start gap-2 text-sm">
-                    <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              <Button asChild variant="outline" className="w-full">
-                <Link to="/contact">Select Plan</Link>
-              </Button>
-            </div>
+            ))}
           </div>
 
           <p className="text-center text-sm text-muted-foreground mt-8">
