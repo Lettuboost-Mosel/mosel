@@ -36,8 +36,7 @@ export function Footer() {
               <span className="text-xl font-bold">Mosel</span>
             </Link>
             <p className="text-background/70 mb-6 leading-relaxed">
-              Mosel... More sell. We transform ideas into 
-              beautiful, functional web solutions.
+              Landing pages for more sales
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
