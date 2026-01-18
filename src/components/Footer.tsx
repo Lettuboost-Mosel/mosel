@@ -122,9 +122,6 @@ export function Footer() {
           <p className="text-background/50 text-sm">
             © {new Date().getFullYear()} Mosel. All rights reserved.
           </p>
-          <p className="text-background/50 text-sm">
-            Crafted with passion in Malaysia
-          </p>
         </div>
       </div>
     </footer>
