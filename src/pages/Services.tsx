@@ -32,7 +32,7 @@ const packages = [
       'Everything in Starter',
       'Multiple pages',
       'Photo Gallery / Video Gallery / Menu',
-      'Chatbot integration',
+      'SEO Optimization',
       'Click-to-call & WhatsApp',
       '1 free revision after launch',
     ],
