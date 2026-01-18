@@ -7,6 +7,7 @@ const footerLinks = {
     { href: '/projects', label: 'Projects' },
     { href: '/services', label: 'Services' },
     { href: '/about', label: 'About' },
+    { href: '/achievements', label: 'Achievements' },
   ],
   services: [
     { href: '/services', label: 'Landing Pages' },
