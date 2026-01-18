@@ -32,7 +32,7 @@ export default function Index() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center pt-20">
+      <section className="relative min-h-screen flex items-center pt-16">
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" />
@@ -42,21 +42,21 @@ export default function Index() {
         <div className="container-custom section-padding relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-8 animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-10 animate-fade-in">
               <Laptop className="w-4 h-4" />
               Web Development Studio
             </div>
 
             {/* Heading */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 animate-fade-in" style={{ animationDelay: '100ms' }}>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8 animate-fade-in" style={{ animationDelay: '100ms' }}>
               <span className="text-gradient">Mosel</span>
             </h1>
             
-            <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-muted-foreground mb-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
+            <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
               Landing pages for more sales
             </p>
 
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: '300ms' }}>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in" style={{ animationDelay: '300ms' }}>
               Mosel designs and builds high-converting landing pages for businesses that want real results.
               We focus on clear messaging, conversion-driven UX, and fast performance — so every visitor
               knows what to do next.
