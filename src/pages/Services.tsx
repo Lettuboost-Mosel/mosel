@@ -94,6 +94,7 @@ export default function Services() {
               label="Our Service"
               title="Website Building Packages"
               description="Professional websites tailored to your business needs. Choose the package that fits you best."
+              className="mb-4 md:mb-6"
             />
           </div>
         </section>
