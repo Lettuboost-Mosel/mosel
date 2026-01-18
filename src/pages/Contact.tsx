@@ -72,8 +72,8 @@ export default function Contact() {
             <SectionHeader
               label="Get in Touch"
               title="Let's Start a Conversation"
-              description="Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible."
-              className="mb-2 md:mb-4"
+              description="Have a website in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible."
+              className="mb-0 md:mb-0"
             />
           </div>
         </section>

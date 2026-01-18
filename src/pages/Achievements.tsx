@@ -49,8 +49,8 @@ export default function Achievements() {
             <SectionHeader
               label="Recognition"
               title="Our Achievements"
-              description="We're proud of the recognition we've received for our work and dedication to excellence."
-              className="mb-2 md:mb-4"
+              description="Awards and achievements accomplished by our team members!"
+              className="mb-0 md:mb-0"
             />
           </div>
         </section>
