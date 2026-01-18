@@ -73,7 +73,7 @@ export const projects: Project[] = [
   {
     id: 'carlo-rino-uiux',
     title: 'Carlo Rino UPM UI/UX',
-    tagline: 'Innovate Carlo Rino UPM UI/UX design competition',
+    tagline: 'Innovate Carlo Rino UPM UI/UX design challenge',
     category: 'UI/UX',
     thumbnail: '',
     description: 'Designing an innovative UI/UX solution for Carlo Rino. Created a complete Figma prototype focusing on user flow clarity, aesthetics, and brand consistency. Innovation: AI Chatbot, FYP Discovery page, Store Stock Finder. The team Design Mavericks, which 2 of the team members are Shahril and Zulhilmi Won 3rd place for creativity, usability, and design execution.',
