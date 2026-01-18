@@ -50,6 +50,7 @@ export default function Achievements() {
               label="Recognition"
               title="Our Achievements"
               description="We're proud of the recognition we've received for our work and dedication to excellence."
+              className="mb-2 md:mb-4"
             />
           </div>
         </section>
