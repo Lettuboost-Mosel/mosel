@@ -118,7 +118,7 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center">
+        <div className="pt-8 border-t border-background/10 flex flex-col md:flex-row justify-center items-center gap-4">
           <p className="text-background/50 text-sm">
             © {new Date().getFullYear()} Mosel. All rights reserved.
           </p>
