@@ -56,7 +56,7 @@ export default function Achievements() {
         </section>
 
         {/* Achievement Cards */}
-        <section className="section-padding pt-0">
+        <section className="section-padding py-0">
           <div className="container-custom">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {achievements.map((achievement, index) => (
