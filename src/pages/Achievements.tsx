@@ -42,7 +42,7 @@ export default function Achievements() {
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      <main className="pt-24">
+      <main className="pt-10">
         {/* Hero */}
         <section className="section-padding pt-12">
           <div className="container-custom">
