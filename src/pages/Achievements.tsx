@@ -70,10 +70,10 @@ export default function Achievements() {
         <section className="section-padding bg-foreground text-background">
           <div className="container-custom text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Let's Create Something Award-Worthy
+              Proven Work. Real Results.
             </h2>
             <p className="text-background/70 text-lg max-w-xl mx-auto mb-8">
-              Partner with us and experience the same dedication that earned us these achievements.
+              Let’s do the same for you.
             </p>
             <Button asChild variant="hero" size="lg">
               <Link to="/contact">

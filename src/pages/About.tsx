@@ -189,14 +189,14 @@ export default function About() {
         <section className="section-padding bg-foreground text-background">
           <div className="container-custom text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Want to Work With Us?
+              Thinking About Your Next Landing Page?
             </h2>
             <p className="text-background/70 text-lg max-w-xl mx-auto mb-8">
-              We're always excited to collaborate on new projects. Let's create something amazing together.
+              Let’s see if Mosel is the right fit to help you generate more leads and enquiries.
             </p>
             <Button asChild variant="hero" size="lg">
               <Link to="/contact">
-                Get in Touch
+                Let's Talk
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </Button>
