@@ -177,7 +177,7 @@ export default function Services() {
             <SectionHeader
               label="Why Mosel"
               title="Why Us?"
-              description="We're not just developers – we're partners invested in your success."
+              description="We're not just developers. we're partners invested in your success."
             />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
