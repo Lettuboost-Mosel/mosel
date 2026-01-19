@@ -44,7 +44,7 @@ export default function Achievements() {
       
       <main className="pt-24">
         {/* Hero */}
-        <section className="section-padding pt-0">
+        <section className="section-padding pt-12">
           <div className="container-custom">
             <SectionHeader
               label="Recognition"
