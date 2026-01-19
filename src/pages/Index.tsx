@@ -57,7 +57,7 @@ export default function Index() {
             </p>
 
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: '300ms' }}>
-              We build landing pages that help your business get more leads.
+              We build landing pages that help you get more leads.
               Clear messaging, conversion-driven UX, and fast performance that guide visitors to take action.
               Let's get more sales!
             </p>
