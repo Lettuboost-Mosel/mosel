@@ -251,7 +251,7 @@ export default function Index() {
             Ready to Start Your Project?
           </h2>
           <p className="text-background/70 text-lg max-w-2xl mx-auto mb-10">
-            Get in touch with us today and let's get more sales!
+            Get in touch with us today and let's get more sales together!
           </p>
           <Button asChild variant="hero" size="xl">
             <Link to="/contact">
