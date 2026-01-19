@@ -57,8 +57,8 @@ export default function Index() {
             </p>
 
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: '300ms' }}>
-              We design and build high-converting landing pages for businesses that want real results,
-              focus on clear messaging, conversion-driven UX, and fast performance — so you
+              We design and build high-converting landing pages for businesses that want real results.
+              With clear messaging, conversion-driven UX, and fast performance as our focus — so you
               know what to do next.
             </p>
 
