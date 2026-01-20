@@ -2,7 +2,7 @@ export interface Project {
   id: string;
   title: string;
   tagline: string;
-  category: 'Web' | 'Landing' | 'App' | 'UI/UX';
+  category: 'Web' | 'Landing' | 'App' | 'UI/UX' | 'Software Systems';
   thumbnail: string;
   description: string;
   problem: string;
