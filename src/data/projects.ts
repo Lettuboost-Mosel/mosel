@@ -22,6 +22,7 @@ import lettuboostImage1 from "../assets/images/lettuboost-image1.png";
 import lettuboostImage2 from "../assets/images/lettuboost-image2.png";
 import lettuboostImage3 from "../assets/images/lettuboost-image3.png";
 import lettuboostImage4 from "../assets/images/lettuboost-image4.png";
+import textgenesImage from "../assets/images/textGenes-image.png";
 
 
 
@@ -127,6 +128,7 @@ export const projects: Project[] = [
     result: '',
     technologies: ['Python', 'OpenAI API', 'LangChain', 'NumPy', 'PyMuPDF', 'Streamlit'],
     year: 2025,
+    images: [lettuboostImage1]
   },
 ];
 
