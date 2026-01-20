@@ -245,7 +245,7 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-foreground text-background border-b border-border/15">
+      <section className="section-padding bg-foreground text-background">
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Ready to Start Your Project?
@@ -260,6 +260,7 @@ export default function Index() {
             </Link>
           </Button>
         </div>
+        <hr class="mx-auto w-4/5 border-gray-300" />
       </section>
 
       <Footer />
