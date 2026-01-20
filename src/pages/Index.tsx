@@ -16,7 +16,7 @@ const achievements = [
   {
     icon: Medal,
     title: '3rd Prize Winner',
-    event: 'Innovate Carlo Rino UPM UI/UX',
+    event: 'Innovate Carlo Rino UPM UI/UX 2024',
   },
   {
     icon: Award,
