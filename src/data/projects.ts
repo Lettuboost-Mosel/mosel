@@ -23,6 +23,7 @@ import lettuboostImage2 from "../assets/images/lettuboost-image2.png";
 import lettuboostImage3 from "../assets/images/lettuboost-image3.png";
 import lettuboostImage4 from "../assets/images/lettuboost-image4.png";
 import textgenesImage from "../assets/images/textGenes-image.png";
+import textgenesThumbnail from "../assets/images/textGenes-thumbnail.png";
 
 
 
@@ -121,7 +122,7 @@ export const projects: Project[] = [
     title: 'TextGenes',
     tagline: 'AI-powered Summarizer',
     category: 'Software Systems',
-    thumbnail: '',
+    thumbnail: textgenesThumbnail,
     description: 'TextGenes is an AI-powered study assistant designed to help students efficiently navigate and understand large volumes of textbook content. The system allows users to upload PDF textbooks and ask questions directly about the content. Using AI-based text processing, TextGenes summarizes lengthy materials into concise, relevant insights and provides direct answers to students’ questions. The project addresses a common problem among students: inefficient study sessions and difficulty identifying key concepts in traditional textbooks. By offering personalized, on-demand explanations, TextGenes improves learning efficiency, reduces cognitive overload, and supports a more focused study experience.',
     problem: '',
     solution: '',
