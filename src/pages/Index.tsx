@@ -260,7 +260,7 @@ export default function Index() {
             </Link>
           </Button>
         </div>
-        <hr class="mx-auto w-4/5 border-gray-300" />
+        <hr class="mt-5 mx-auto w-9/10 border-gray-300" />
       </section>
 
       <Footer />
