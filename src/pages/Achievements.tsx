@@ -11,14 +11,14 @@ const achievements = [
     title: 'Best Teamwork Award',
     event: 'National Fintech Codeathon 2022',
     year: 2022,
-    description: 'Team Mr. Biceps Recognized for exceptional collaboration and team coordination in developing an innovative fintech solution under time pressure.',
+    description: "Recognized for exceptional collaboration and team coordination in developing an innovative fintech solution under time pressure with the team name of 'Mr. Biceps'",
     icon: Trophy,
   },
   {
     title: '3rd Prize - UI/UX Design',
     event: 'Innovate Carlo Rino UPM UI/UX 2024',
     year: 2024,
-    description: 'Team Design Mavericks Awarded for outstanding UI/UX design in the Carlo Rino innovation challenge at Universiti Putra Malaysia.',
+    description: "Awarded for outstanding UI/UX design in the Carlo Rino innovation challenge at Universiti Putra Malaysia with the team name of 'Design Mavericks'.",
     icon: Medal,
   },
   {
