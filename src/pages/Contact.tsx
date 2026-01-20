@@ -67,7 +67,7 @@ export default function Contact() {
       
       <main className="pt-24">
         {/* Hero */}
-        <section className="section-padding pt-12 pb-10">
+        <section className="section-padding py-12">
           <div className="container-custom">
             <SectionHeader
               label="Get in Touch"
