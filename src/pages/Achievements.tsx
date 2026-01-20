@@ -11,30 +11,23 @@ const achievements = [
     title: 'Best Teamwork Award',
     event: 'National Fintech Codeathon 2022',
     year: 2022,
-    description: 'Recognized for exceptional collaboration and team coordination in developing an innovative fintech solution under time pressure.',
+    description: 'Team Mr. Biceps Recognized for exceptional collaboration and team coordination in developing an innovative fintech solution under time pressure.',
     icon: Trophy,
   },
   {
     title: '3rd Prize - UI/UX Design',
-    event: 'Innovate Carlo Rino UPM',
-    year: 2022,
-    description: 'Awarded for outstanding user interface and experience design in the Carlo Rino innovation challenge at Universiti Putra Malaysia.',
+    event: 'Innovate Carlo Rino UPM UI/UX 2024',
+    year: 2024,
+    description: 'Team Design Mavericks Awarded for outstanding UI/UX design in the Carlo Rino innovation challenge at Universiti Putra Malaysia.',
     icon: Medal,
   },
   {
     title: '1st Winning Prize',
     event: 'Digital Kampung Website for Community',
-    year: 2023,
-    description: 'Won first place for designing and developing an impactful community website that connects and empowers local kampung residents.',
+    year: 2025,
+    description: 'One of our team member won the first place for designing and developing an impactful community website that connects and empowers volunteers and NGOs.',
     icon: Award,
   },
-];
-
-const milestones = [
-  { year: '2022', title: 'Studio Founded', description: 'Mosel was established with a vision to help businesses sell more.' },
-  { year: '2022', title: 'First Awards', description: 'Won Best Teamwork at National Fintech Codeathon and 3rd Prize at Innovate Carlo Rino.' },
-  { year: '2023', title: 'Digital Kampung Victory', description: 'Won 1st Prize for Digital Kampung Website for Community competition.' },
-  { year: '2024', title: 'Continued Growth', description: 'Continuing to push boundaries and deliver exceptional work for our clients.' },
 ];
 
 export default function Achievements() {

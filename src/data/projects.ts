@@ -49,7 +49,7 @@ export const projects: Project[] = [
     tagline: 'Platform Connecting Volunteers and NGOs',
     category: 'Web',
     thumbnail: '',
-    description: 'Built a community-focused website for the Digital Kampung program organized by Saperdu. Designed and developed a platform promoting local cultural activities, community involvement, and digital empowerment. Delivered a pitch and won 1st place for clarity, innovation, real-world applicability, and community-driven solution. Developed by Shahril Aimar, one of Mosel core team members.',
+    description: 'Built a community-focused website for the Digital Kampung program organized by Saperdu. Designed and developed a platform promoting events and connecting volunteers and NGOs in a centralised platform. Delivered a pitch and won 1st place for clarity, innovation, real-world applicability, and community-driven solution. Developed by Shahril Aimar, one of Mosel core team members.',
     problem: '',
     solution: '',
     result: '',
