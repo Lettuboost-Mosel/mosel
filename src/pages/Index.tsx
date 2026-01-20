@@ -83,7 +83,7 @@ export default function Index() {
 
 
       {/* Featured Projects Section */}
-      <section className="section-padding">
+      <section className="section-padding bg-muted/30">
         <div className="container-custom">
           <SectionHeader
             label="Our Work"
@@ -109,7 +109,7 @@ export default function Index() {
       </section>
 
       {/* Website Packages Section */}
-      <section className="section-padding bg-muted/30">
+      <section className="section-padding">
         <div className="container-custom">
           <SectionHeader
             label="Pricing"
