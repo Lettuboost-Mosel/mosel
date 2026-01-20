@@ -46,7 +46,7 @@ export const projects: Project[] = [
   {
     id: 'saravol',
     title: 'SaraVol',
-    tagline: 'Digital Kampung community platform',
+    tagline: 'Connecting Volunteers and NGOs. Transforming Communities.',
     category: 'Web',
     thumbnail: '',
     description: 'Built a community-focused website for the Digital Kampung program organized by Saperdu. Designed and developed a platform promoting local cultural activities, community involvement, and digital empowerment. Delivered a pitch and won 1st place for clarity, innovation, real-world applicability, and community-driven solution. Developed by Shahril Aimar, one of Mosel core team members.',
