@@ -11,7 +11,7 @@ const achievements = [
     title: 'Best Teamwork Award',
     event: 'National Fintech Codeathon 2022',
     year: 2022,
-    description: "Recognized for exceptional collaboration and team coordination in developing an innovative fintech solution under time pressure with the team name of 'Mr. Biceps'",
+    description: "Recognized for exceptional collaboration and team coordination in developing an innovative fintech solution under time pressure with the team name of 'Mr. Biceps'.",
     icon: Trophy,
   },
   {
