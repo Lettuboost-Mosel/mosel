@@ -245,7 +245,7 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-foreground text-background border-b border-border/50">
+      <section className="section-padding bg-foreground text-background border-b border-border/20">
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Ready to Start Your Project?
