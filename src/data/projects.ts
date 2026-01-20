@@ -128,7 +128,7 @@ export const projects: Project[] = [
     result: '',
     technologies: ['Python', 'OpenAI API', 'LangChain', 'NumPy', 'PyMuPDF', 'Streamlit'],
     year: 2025,
-    images: [lettuboostImage1]
+    images: [textgenesImage]
   },
 ];
 
