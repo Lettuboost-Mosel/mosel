@@ -118,14 +118,14 @@ export const projects: Project[] = [
   {
     id: 'textgenes',
     title: 'TextGenes',
-    tagline: 'Coming soon',
-    category: 'Web',
+    tagline: 'AI-powered Summarizer',
+    category: 'Software Systems',
     thumbnail: '',
-    description: 'Project details to be announced.',
+    description: 'TextGenes is an AI-powered study assistant designed to help students efficiently navigate and understand large volumes of textbook content. The system allows users to upload PDF textbooks and ask questions directly about the content. Using AI-based text processing, TextGenes summarizes lengthy materials into concise, relevant insights and provides direct answers to students’ questions. The project addresses a common problem among students: inefficient study sessions and difficulty identifying key concepts in traditional textbooks. By offering personalized, on-demand explanations, TextGenes improves learning efficiency, reduces cognitive overload, and supports a more focused study experience.',
     problem: '',
     solution: '',
     result: '',
-    technologies: ['React', 'TypeScript'],
+    technologies: ['Python', 'OpenAI API', 'LangChain', 'NumPy', 'PyMuPDF', 'Streamlit'],
     year: 2025,
   },
 ];
