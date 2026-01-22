@@ -55,7 +55,7 @@ export const projects: Project[] = [
     result: '',
     technologies: ['React', 'TypeScript', 'Tailwind CSS'],
     year: 2025,
-    liveUrl: 'https://saravol.lovable.app',
+    liveUrl: 'https://saravol.vercel.app',
     githubUrl: 'https://github.com/shahril0622/saravol',
     videoUrl: 'https://youtu.be/etJlSv8rPpA',
   },
