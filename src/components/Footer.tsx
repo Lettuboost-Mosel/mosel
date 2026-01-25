@@ -118,8 +118,8 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-background/50 text-sm text-center md:text-left">
+        <div className="pt-8 border-t border-background/10 flex flex-col md:flex-row justify-center md:justify-between items-center">
+          <p className="text-background/50 text-sm">
             © {new Date().getFullYear()} Mosel. All rights reserved.
           </p>
         </div>
