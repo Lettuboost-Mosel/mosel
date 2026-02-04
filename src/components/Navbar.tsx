@@ -18,7 +18,7 @@ export function Navbar() {
   const location = useLocation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-muted/30 backdrop-blur-lg border-b border-border/50">
       <div className="container-custom section-padding py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 group">

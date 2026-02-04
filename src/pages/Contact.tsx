@@ -18,14 +18,12 @@ const contactInfo = [
   {
     icon: Phone,
     label: 'WhatsApp',
-    value: '+60 12-345 6789',
-    href: 'https://wa.me/60123456789',
+    value: '+60 14-622 8473',
+    href: 'https://wa.me/60146228473',
   },
 ];
 
 const socialLinks = [
-  { icon: Github, href: 'https://github.com', label: 'GitHub' },
-  { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
   { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
 ];
 
