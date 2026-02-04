@@ -40,15 +40,24 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    const formattedMessage = [
+      'Hello Mosel,',
+      '',
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      '',
+      'Message:',
+      formData.message,
+    ].join('\n');
+
+    const whatsappUrl = `https://wa.me/60146228473?text=${encodeURIComponent(formattedMessage)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 
     toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. We'll get back to you soon.",
+      title: 'WhatsApp Opened',
+      description: 'Review the message in WhatsApp and press send.',
     });
 
-    setFormData({ name: '', email: '', message: '' });
     setIsSubmitting(false);
   };
 
