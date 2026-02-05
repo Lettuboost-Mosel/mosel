@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Instagram, Mail, ArrowUpRight } from 'lucide-react';
+import { Mail, ArrowUpRight } from 'lucide-react';
 
 const footerLinks = {
   navigation: [
@@ -17,9 +17,6 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { href: 'https://github.com', icon: Github, label: 'GitHub' },
-  { href: 'https://linkedin.com', icon: Linkedin, label: 'LinkedIn' },
-  { href: 'https://instagram.com', icon: Instagram, label: 'Instagram' },
   { href: 'mailto:hello@mosel.dev', icon: Mail, label: 'Email' },
 ];
 

@@ -93,32 +93,35 @@ export default function About() {
           </div>
         </section>
 
-        {/* Story */}
+        {/* Who We Are */}
         <section className="section-padding bg-muted/30">
           <div className="container-custom">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="opacity-0 animate-fade-in" style={{ animationFillMode: 'forwards' }}>
-                <span className="text-primary font-medium mb-4 block">Our Story</span>
+                <span className="text-primary font-medium mb-4 block">Who We Are</span>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  From Passion Project to Professional Studio
+                  A Web Studio Built for Real-World Business Needs
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Mosel was born from a simple belief: that every business deserves 
-                    a digital presence that truly represents their vision. What started 
-                    as a passion project has evolved into a full-fledged web development 
-                    studio.
+                    Mosel is a web development studio that helps businesses establish a clear
+                    and effective online presence.
                   </p>
                   <p>
-                    Our journey began in 2022, when our founding team came together with 
-                    a shared vision of creating exceptional web experiences. Since then, 
-                    we've had the privilege of working with diverse clients, from startups 
-                    to established businesses.
+                    We work with small businesses, startups, and growing brands that need more
+                    than just a website - they need something that represents their business
+                    properly, works across devices, and is easy to manage over time.
                   </p>
                   <p>
-                    Today, we continue to push the boundaries of what's possible in web 
-                    development, always staying true to our core values of excellence, 
-                    innovation, and client satisfaction.
+                    Our focus is on building practical, performance-focused websites, from
+                    simple landing pages to full business sites. We prioritize clarity,
+                    usability, and scalability, so your website supports your business goals
+                    instead of becoming a burden.
+                  </p>
+                  <p>
+                    Mosel was started with a simple idea: businesses should not need a large
+                    agency to get a reliable, professional website. We keep things lean,
+                    transparent, and tailored to what actually matters.
                   </p>
                 </div>
               </div>
