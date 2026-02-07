@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, ArrowUpRight } from 'lucide-react';
+import { Mail, ArrowUpRight, ExternalLink, MessageCircle } from 'lucide-react';
 
 const footerLinks = {
   navigation: [
@@ -95,9 +95,11 @@ export function Footer() {
               <li>
                 <a
                   href="mailto:moseldevteam@gmail.com"
-                  className="text-background/70 hover:text-primary transition-colors duration-300"
+                  className="text-background/70 hover:text-primary transition-colors duration-300 flex items-center gap-2 group"
                 >
+                  <Mail className="w-4 h-4" />
                   moseldevteam@gmail.com
+                  <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </a>
               </li>
               <li>
@@ -105,9 +107,11 @@ export function Footer() {
                   href="https://wa.me/1234567890"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-background/70 hover:text-primary transition-colors duration-300"
+                  className="text-background/70 hover:text-primary transition-colors duration-300 flex items-center gap-2 group"
                 >
+                  <MessageCircle className="w-4 h-4" />
                   WhatsApp
+                  <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </a>
               </li>
             </ul>
