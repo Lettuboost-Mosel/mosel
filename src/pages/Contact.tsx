@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, Send, Github, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, Send, Github, Linkedin, Instagram, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -177,9 +177,10 @@ export default function Contact() {
                               href={item.href}
                               target={item.href.startsWith('http') ? '_blank' : undefined}
                               rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                              className="font-medium hover:text-primary transition-colors"
+                              className="font-medium hover:text-primary transition-colors flex items-center gap-2 group/link"
                             >
                               {item.value}
+                              <ExternalLink className="w-4 h-4 opacity-0 group-hover/link:opacity-100 transition-opacity duration-300" />
                             </a>
                           ) : (
                             <p className="font-medium">{item.value}</p>
