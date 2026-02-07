@@ -166,32 +166,24 @@ export default function Contact() {
                   
                   <div className="space-y-6 mb-10">
                     {contactInfo.map((item) => (
-                      <div key={item.label} className="flex items-start gap-4">
-                        <a
-                          href={item.href}
-                          target={item.href?.startsWith('http') ? '_blank' : undefined}
-                          rel={item.href?.startsWith('http') ? 'noopener noreferrer' : undefined}
-                          className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 cursor-pointer hover:bg-primary/20 transition-colors"
-                        >
+                      <a
+                        key={item.label}
+                        href={item.href}
+                        target={item.href?.startsWith('http') ? '_blank' : undefined}
+                        rel={item.href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+                        className="flex items-start gap-4 group/contact cursor-pointer"
+                      >
+                        <div className="w-12 h-12 rounded-xl bg-primary/10 group-hover/contact:bg-primary/20 flex items-center justify-center shrink-0 transition-colors">
                           <item.icon className="w-5 h-5 text-primary" />
-                        </a>
+                        </div>
                         <div>
                           <p className="text-sm text-muted-foreground mb-1">{item.label}</p>
-                          {item.href ? (
-                            <a
-                              href={item.href}
-                              target={item.href.startsWith('http') ? '_blank' : undefined}
-                              rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                              className="font-medium hover:text-primary transition-colors flex items-center gap-2 group/link"
-                            >
-                              {item.value}
-                              <ExternalLink className="w-4 h-4 opacity-0 group-hover/link:opacity-100 transition-opacity duration-300" />
-                            </a>
-                          ) : (
-                            <p className="font-medium">{item.value}</p>
-                          )}
+                          <span className="font-medium group-hover/contact:text-primary transition-colors flex items-center gap-2">
+                            {item.value}
+                            <ExternalLink className="w-4 h-4 opacity-0 group-hover/contact:opacity-100 transition-opacity duration-300" />
+                          </span>
                         </div>
-                      </div>
+                      </a>
                     ))}
                   </div>
 
