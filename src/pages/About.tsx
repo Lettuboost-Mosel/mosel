@@ -134,11 +134,6 @@ export default function About() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                {/* Floating Card */}
-              <div className="absolute -bottom-6 -left-6 p-6 rounded-2xl bg-card border border-border/50 shadow-xl max-w-xs">
-                  <div className="text-4xl font-bold text-primary mb-1">2+</div>
-                  <div className="text-muted-foreground">Years helping businesses sell more</div>
-                </div>
               </div>
             </div>
           </div>

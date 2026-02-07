@@ -17,7 +17,7 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { href: 'mailto:hello@mosel.dev', icon: Mail, label: 'Email' },
+  { href: 'mailto:moseldevteam@gmail.com', icon: Mail, label: 'Email' },
 ];
 
 export function Footer() {
@@ -94,10 +94,10 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="mailto:hello@mosel.dev"
+                  href="mailto:moseldevteam@gmail.com"
                   className="text-background/70 hover:text-primary transition-colors duration-300"
                 >
-                  hello@mosel.dev
+                  moseldevteam@gmail.com
                 </a>
               </li>
               <li>
