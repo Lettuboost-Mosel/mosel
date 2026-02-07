@@ -19,8 +19,8 @@ const team = [
     image: zulAbout,
     socials: {
       linkedin: 'https://www.linkedin.com/in/zulhilmi-reduan-015381227/',
-      github: 'https://github.com',
-      twitter: 'https://twitter.com',
+      instagram: 'https://www.instagram.com/zulhilmi_3/',
+      github: 'https://github.com/zul3',
     },
   },
   {
@@ -29,8 +29,10 @@ const team = [
     bio: 'Creative designer focused on crafting beautiful, user-centered digital experiences.',
     image: shahrilAbout,
     socials: {
-      linkedin: 'https://linkedin.com',
-      twitter: 'https://twitter.com',
+      linkedin: 'https://www.linkedin.com/in/shahril-aimar-faizal-418120224/',
+      instagram: 'https://www.instagram.com/shahreal0622/',
+      github: 'https://github.com/shahril2206',
+      website: 'https://shahrilaimar-portfolio.vercel.app/',
     },
   },
   {
@@ -40,6 +42,7 @@ const team = [
     image: hazimAbout,
     socials: {
       linkedin: 'https://www.linkedin.com/in/hazim-danish-523341287/',
+      instagram: 'https://www.instagram.com/hazimdanish00123/',
       github: 'https://github.com/HazimDanish16',
     },
   },
