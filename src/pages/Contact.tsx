@@ -167,9 +167,14 @@ export default function Contact() {
                   <div className="space-y-6 mb-10">
                     {contactInfo.map((item) => (
                       <div key={item.label} className="flex items-start gap-4">
-                        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                        <a
+                          href={item.href}
+                          target={item.href?.startsWith('http') ? '_blank' : undefined}
+                          rel={item.href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+                          className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 cursor-pointer hover:bg-primary/20 transition-colors"
+                        >
                           <item.icon className="w-5 h-5 text-primary" />
-                        </div>
+                        </a>
                         <div>
                           <p className="text-sm text-muted-foreground mb-1">{item.label}</p>
                           {item.href ? (
