@@ -1,4 +1,4 @@
-import { Linkedin, Github, Twitter } from 'lucide-react';
+import { Linkedin, Github, Instagram, Globe } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface TeamMemberProps {
@@ -9,7 +9,8 @@ interface TeamMemberProps {
   socials?: {
     linkedin?: string;
     github?: string;
-    twitter?: string;
+    instagram?: string;
+    website?: string;
   };
   index?: number;
 }
@@ -64,15 +65,27 @@ export function TeamMember({ name, role, bio, image, socials, index = 0 }: TeamM
               <Github className="w-4 h-4" />
             </a>
           )}
-          {socials.twitter && (
+          {socials.instagram && (
             <a
-              href={socials.twitter}
+              href={socials.instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-lg bg-muted flex items-center justify-center transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
-              aria-label={`${name}'s Twitter`}
+              aria-label={`${name}'s Instagram`}
             >
-              <Twitter className="w-4 h-4" />
+              <Instagram className="w-4 h-4" />
+            </a>
+          )}
+
+          {socials.website && (
+            <a
+              href={socials.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-9 h-9 rounded-lg bg-muted flex items-center justify-center transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
+              aria-label={`${name}'s Website`}
+            >
+              <Globe className="w-4 h-4" />
             </a>
           )}
         </div>
