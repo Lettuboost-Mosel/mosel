@@ -8,7 +8,7 @@ import { SectionHeader } from '@/components/SectionHeader';
 
 
 import zulAbout from "../assets/images/zul-about.jpeg";
-import shahrilAbout from "../assets/images/shahril-about.jpeg";
+import shahrilAbout from "../assets/images/shahril-about.png";
 import hazimAbout from "../assets/images/hazim-about.png";
 
 const team = [
