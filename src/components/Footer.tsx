@@ -110,7 +110,7 @@ export function Footer() {
                   className="text-background/70 hover:text-primary transition-colors duration-300 flex items-center gap-2 group"
                 >
                   <MessageCircle className="w-4 h-4" />
-                  WhatsApp
+                  Chat on WhatsApp
                   <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </a>
               </li>
