@@ -12,8 +12,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@mosel.dev',
-    href: 'mailto:hello@mosel.dev',
+    value: 'moseldevteam@gmail.com',
+    href: 'mailto:moseldevteam@gmail.com',
   },
   {
     icon: Phone,
