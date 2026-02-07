@@ -1,4 +1,4 @@
-import { Linkedin, Github, Twitter } from 'lucide-react';
+import { Linkedin, Github, Instagram, Globe } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface TeamMemberProps {
@@ -9,7 +9,8 @@ interface TeamMemberProps {
   socials?: {
     linkedin?: string;
     github?: string;
-    twitter?: string;
+    instagram?: string;
+    website?: string;
   };
   index?: number;
 }
