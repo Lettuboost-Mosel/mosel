@@ -97,7 +97,7 @@ export function Footer() {
                   href="mailto:moseldevteam@gmail.com"
                   className="text-background/70 hover:text-primary transition-colors duration-300 flex items-center gap-2 group"
                 >
-                  <Mail className="w-4 h-4 text-primary" />
+                  <Mail className="w-4 h-4" />
                   moseldevteam@gmail.com
                   <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </a>
@@ -109,7 +109,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-background/70 hover:text-primary transition-colors duration-300 flex items-center gap-2 group"
                 >
-                  <MessageCircle className="w-4 h-4 text-accent" />
+                  <MessageCircle className="w-4 h-4" />
                   WhatsApp
                   <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </a>
