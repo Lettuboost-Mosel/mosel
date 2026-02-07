@@ -18,7 +18,7 @@ const contactInfo = [
   {
     icon: Phone,
     label: 'WhatsApp',
-    value: '+60 14-622 8473',
+    value: '+60 14-622 8473 (Shahril)',
     href: 'https://wa.me/60146228473',
   },
 ];
