@@ -24,12 +24,13 @@ export function TeamMember({ name, role, bio, image, socials, index = 0 }: TeamM
       style={{ animationDelay: `${index * 150}ms`, animationFillMode: 'forwards' }}
     >
       {/* Image */}
-      <div className="relative w-40 h-40 mx-auto mb-6 rounded-2xl overflow-hidden bg-background">
+      <div className="relative w-40 h-40 mx-auto mb-6 rounded-2xl overflow-hidden">
         <img
           src={image}
           alt={name}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
+        <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors duration-300" />
       </div>
 
       {/* Info */}
