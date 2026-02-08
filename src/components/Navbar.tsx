@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import moselLogo from '@/assets/images/mosel-logo.png';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -22,9 +23,7 @@ export function Navbar() {
       <div className="container-custom section-padding py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-              <span className="text-primary-foreground font-bold text-xl">M</span>
-            </div>
+            <img src={moselLogo} alt="Mosel Logo" className="w-10 h-10 rounded-full object-cover transition-transform duration-300 group-hover:scale-110" />
             <span className="text-xl font-bold tracking-tight">Mosel</span>
           </Link>
 
