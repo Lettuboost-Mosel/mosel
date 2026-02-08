@@ -15,7 +15,7 @@ const team = [
   {
     name: 'Zulhilmi Reduan',
     role: 'Founder & Coordinator',
-    bio: "Defines mosel's direction, identity, and core service offerings. He oversees strategic decisions, ensures operational sustainability, and supports Mosel’s growth through funding, tools, and infrastructure. Primarily focuses on building Mosel as a reliable digital partner for businesses.",
+    bio: "Defines mosel's direction, identity, and core service offerings. He oversees strategic decisions, ensures operational sustainability, and supports Mosel’s growth through funding, tools, and infrastructure. Focuses on building Mosel as a reliable digital partner for businesses.",
     image: zulAbout,
     socials: {
       linkedin: 'https://www.linkedin.com/in/zulhilmi-reduan-015381227/',
@@ -26,7 +26,7 @@ const team = [
   {
     name: 'Shahril',
     role: 'Project Manager & Developer',
-    bio: "Leads Mosel’s operations end-to-end, from project planning and client communication to development and conversion strategy, ensuring every project stays on timeline, aligns with business goals, and delivers real value. Primarily focuses on bridging the gap between client needs and technical execution.",
+    bio: "Leads Mosel’s operations end-to-end, from project planning and client communication to development and conversion strategy, ensuring every project stays on timeline, aligns with business goals, and delivers real value. Focuses on bridging the gap between client needs and technical execution.",
     image: shahrilAbout,
     socials: {
       linkedin: 'https://www.linkedin.com/in/shahril-aimar-faizal-418120224/',
