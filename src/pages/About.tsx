@@ -15,7 +15,7 @@ const team = [
   {
     name: 'Zulhilmi Reduan',
     role: 'Founder & Coordinator',
-    bio: 'Full-stack developer with a passion for creating elegant solutions to complex problems.',
+    bio: "Defines mosel's direction, identity, and core service offerings. He oversees strategic decisions, ensures operational sustainability, and supports Mosel’s growth through funding, tools, and infrastructure. Primarily focuses on building Mosel as a reliable digital partner for businesses.",
     image: zulAbout,
     socials: {
       linkedin: 'https://www.linkedin.com/in/zulhilmi-reduan-015381227/',
@@ -26,7 +26,7 @@ const team = [
   {
     name: 'Shahril',
     role: 'Project Manager & Developer',
-    bio: 'Creative designer focused on crafting beautiful, user-centered digital experiences.',
+    bio: "Leads Mosel’s operations end-to-end, from project planning and client communication to development and conversion strategy, ensuring every project stays on timeline, aligns with business goals, and delivers real value. Primarily focuses on bridging the gap between client needs and technical execution.",
     image: shahrilAbout,
     socials: {
       linkedin: 'https://www.linkedin.com/in/shahril-aimar-faizal-418120224/',
@@ -38,7 +38,7 @@ const team = [
   {
     name: 'Hazim Danish',
     role: 'Full-Stack Developer',
-    bio: 'Systems architect specializing in scalable backend solutions and database optimization.',
+    bio: "The core technical powerhouse, leading full-stack development across projects, handling system architecture, feature implementation, and security considerations. From building scalable websites to ensuring performance and reliability, turning ideas into robust, production-ready solutions.",
     image: hazimAbout,
     socials: {
       linkedin: 'https://www.linkedin.com/in/hazim-danish-523341287/',
