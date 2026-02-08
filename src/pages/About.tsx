@@ -7,7 +7,7 @@ import { TeamMember } from '@/components/TeamMember';
 import { SectionHeader } from '@/components/SectionHeader';
 
 
-import zulAbout from "../assets/images/zul-about.jpeg";
+import zulAbout from "../assets/images/zul-about-bgremoved.png";
 import shahrilAbout from "../assets/images/shahril-about.png";
 import hazimAbout from "../assets/images/hazim-about.png";
 
