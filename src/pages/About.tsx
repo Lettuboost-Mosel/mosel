@@ -129,18 +129,13 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="relative opacity-0 animate-fade-in-up" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+              <div className="opacity-0 animate-fade-in-up" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
                 <div className="aspect-square rounded-2xl overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+                    src="/placeholder.svg"
                     alt="Team collaboration"
                     className="w-full h-full object-cover"
                   />
-                </div>
-                {/* Floating Card */}
-              <div className="absolute -bottom-6 -left-6 p-6 rounded-2xl bg-card border border-border/50 shadow-xl max-w-xs">
-                  <div className="text-4xl font-bold text-primary mb-1">2+</div>
-                  <div className="text-muted-foreground">Years helping businesses sell more</div>
                 </div>
               </div>
             </div>
