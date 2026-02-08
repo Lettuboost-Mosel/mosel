@@ -27,7 +27,7 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1 flex flex-col items-center justify-center">
             <Link to="/" className="mb-6">
-              <img src={moselLogoFooter} alt="Mosel Logo" className="w-40 h-40 object-contain drop-shadow-[0_0_25px_hsl(var(--primary)/0.3)]" />
+              <img src={moselLogoFooter} alt="Mosel Logo" className="w-40 h-40 object-contain transition-all duration-300 hover:drop-shadow-[0_0_25px_hsl(var(--primary)/0.3)]" />
             </Link>
             <p className="text-background/70 mb-6 leading-relaxed text-center">
               Landing pages for more sales
