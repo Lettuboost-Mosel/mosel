@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Mail, ArrowUpRight, ExternalLink, MessageCircle } from 'lucide-react';
+import { ArrowUpRight, ExternalLink, MessageCircle } from 'lucide-react';
+import moselLogoFooter from '@/assets/images/mosel-logo-footer.png';
 
 const footerLinks = {
   navigation: [
@@ -16,9 +17,7 @@ const footerLinks = {
   ],
 };
 
-const socialLinks = [
-  { href: 'mailto:hello@mosel.dev', icon: Mail, label: 'Email' },
-];
+const socialLinks: { href: string; icon?: any; label: string }[] = [];
 
 export function Footer() {
   return (
@@ -26,30 +25,13 @@ export function Footer() {
       <div className="container-custom section-padding pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
-          <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">M</span>
-              </div>
-              <span className="text-xl font-bold">Mosel</span>
+          <div className="lg:col-span-1 flex flex-col items-center justify-center">
+            <Link to="/" className="mb-6">
+              <img src={moselLogoFooter} alt="Mosel Logo" className="w-40 h-40 object-contain" />
             </Link>
-            <p className="text-background/70 mb-6 leading-relaxed">
+            <p className="text-background/70 mb-6 leading-relaxed text-center">
               Landing pages for more sales
             </p>
-            <div className="flex gap-4">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
-                  aria-label={social.label}
-                >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Navigation */}
@@ -97,7 +79,6 @@ export function Footer() {
                   href="mailto:moseldevteam@gmail.com"
                   className="text-background/70 hover:text-primary transition-colors duration-300 flex items-center gap-2 group"
                 >
-                  <Mail className="w-4 h-4" />
                   moseldevteam@gmail.com
                   <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </a>
