@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, ExternalLink, MessageCircle } from 'lucide-react';
 import moselLogoFooter from '@/assets/images/mosel-logo-footer.png';
+import { Mail } from "lucide-react";
 
 const footerLinks = {
   navigation: [
@@ -79,6 +80,7 @@ export function Footer() {
                   href="mailto:moseldevteam@gmail.com"
                   className="text-background/70 hover:text-primary transition-colors duration-300 flex items-center gap-2 group"
                 >
+                  <Mail className="w-4 h-4" />
                   moseldevteam@gmail.com
                   <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </a>
