@@ -101,7 +101,7 @@ export function Navbar() {
                   className="h-12 w-full rounded-full bg-primary text-base font-semibold text-primary-foreground hover:bg-primary/90"
                 >
                   <Link to="/contact" onClick={() => setIsOpen(false)}>
-                    Contact Us
+                    Get Started
                   </Link>
                 </Button>
               </div>
