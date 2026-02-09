@@ -24,7 +24,7 @@ const contactInfo = [
 ];
 
 const socialLinks = [
-  { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
+  { icon: Instagram, href: 'https://www.instagram.com/moseldevteam/', label: 'Instagram' },
 ];
 
 export default function Contact() {

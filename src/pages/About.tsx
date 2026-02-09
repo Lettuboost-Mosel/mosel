@@ -7,7 +7,7 @@ import { TeamMember } from '@/components/TeamMember';
 import { SectionHeader } from '@/components/SectionHeader';
 
 
-import zulAbout from "../assets/images/zul-about.jpeg";
+import zulAbout from "../assets/images/zul-about-bgremoved.png";
 import shahrilAbout from "../assets/images/shahril-about.png";
 import hazimAbout from "../assets/images/hazim-about.png";
 
@@ -15,7 +15,7 @@ const team = [
   {
     name: 'Zulhilmi Reduan',
     role: 'Founder & Coordinator',
-    bio: 'Full-stack developer with a passion for creating elegant solutions to complex problems.',
+    bio: "Defines mosel's direction, identity, and core service offerings. He oversees strategic decisions, ensures operational sustainability, and supports Mosel’s growth through funding, tools, and infrastructure. Focuses on building Mosel as a reliable digital partner for businesses.",
     image: zulAbout,
     socials: {
       linkedin: 'https://www.linkedin.com/in/zulhilmi-reduan-015381227/',
@@ -26,7 +26,7 @@ const team = [
   {
     name: 'Shahril',
     role: 'Project Manager & Developer',
-    bio: 'Creative designer focused on crafting beautiful, user-centered digital experiences.',
+    bio: "Leads Mosel’s operations end-to-end, from project planning and client communication to development and conversion strategy, ensuring every project stays on timeline, aligns with business goals, and delivers real value. Focuses on bridging the gap between client needs and technical execution.",
     image: shahrilAbout,
     socials: {
       linkedin: 'https://www.linkedin.com/in/shahril-aimar-faizal-418120224/',
@@ -38,7 +38,7 @@ const team = [
   {
     name: 'Hazim Danish',
     role: 'Full-Stack Developer',
-    bio: 'Systems architect specializing in scalable backend solutions and database optimization.',
+    bio: "The core technical powerhouse, leading full-stack development across projects, handling system architecture, feature implementation, and security considerations. From building scalable websites to ensuring performance and reliability, turning ideas into robust, production-ready solutions.",
     image: hazimAbout,
     socials: {
       linkedin: 'https://www.linkedin.com/in/hazim-danish-523341287/',
@@ -129,18 +129,13 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="relative opacity-0 animate-fade-in-up" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
+              <div className="opacity-0 animate-fade-in-up" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
                 <div className="aspect-square rounded-2xl overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+                    src="/placeholder.svg"
                     alt="Team collaboration"
                     className="w-full h-full object-cover"
                   />
-                </div>
-                {/* Floating Card */}
-              <div className="absolute -bottom-6 -left-6 p-6 rounded-2xl bg-card border border-border/50 shadow-xl max-w-xs">
-                  <div className="text-4xl font-bold text-primary mb-1">2+</div>
-                  <div className="text-muted-foreground">Years helping businesses sell more</div>
                 </div>
               </div>
             </div>
