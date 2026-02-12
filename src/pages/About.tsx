@@ -80,7 +80,7 @@ export default function About() {
         {/* Who We Are */}
         <section className="section-padding pt-12">
           <div className="container-custom">
-            <div className="max-w-4xl mx-auto opacity-0 animate-fade-in" style={{ animationFillMode: 'forwards' }}>
+            <div className="max-w-4xl mx-auto text-center opacity-0 animate-fade-in" style={{ animationFillMode: 'forwards' }}>
               <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-in">
                 About Us
               </span>
