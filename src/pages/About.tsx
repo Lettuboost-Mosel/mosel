@@ -85,7 +85,17 @@ export default function About() {
                 About Us
               </span>
               <h2 className="text-3xl md:text-4xl font-bold mb-[30px]">
-                A <span className="text-transparent font-bold text-4xl [-webkit-text-stroke:2px_rgb(143,215,229)]">Web Studio</span> Built for Real-World Business Needs
+                A <span className="text-transparent font-bold text-4xl
+[text-shadow:
+2px_0_0_rgb(143,215,229),
+-2px_0_0_rgb(143,215,229),
+0_2px_0_rgb(143,215,229),
+0_-2px_0_rgb(143,215,229),
+2px_2px_0_rgb(143,215,229),
+-2px_-2px_0_rgb(143,215,229),
+2px_-2px_0_rgb(143,215,229),
+-2px_2px_0_rgb(143,215,229)]
+">Web Studio</span> Built for Real-World Business Needs
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
