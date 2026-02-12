@@ -114,7 +114,7 @@ export default function About() {
         </section>
 
         {/* Values */}
-        <section className="section-padding">
+        <section className="section-padding bg-muted-30">
           <div className="container-custom">
             <SectionHeader
               label="Our Values"
