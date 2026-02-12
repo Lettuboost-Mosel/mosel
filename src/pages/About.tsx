@@ -126,7 +126,7 @@ export default function About() {
               {values.map((value, index) =>
               <div
                 key={value.title}
-                className="text-center p-8 rounded-2xl border border-border/50 hover-lift opacity-0 animate-fade-in-up bg-accent"
+                className="text-center p-8 rounded-2xl border border-border/50 hover-lift opacity-0 animate-fade-in-up bg-[#111317]"
                 style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}>
 
                   <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
