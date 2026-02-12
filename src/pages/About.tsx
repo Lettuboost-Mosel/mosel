@@ -141,7 +141,7 @@ export default function About() {
         </section>
 
         {/* Team */}
-        <section className="section-padding">
+        <section className="section-padding bg-muted/30">
           <div className="container-custom">
             <SectionHeader
               label="Our Team"
