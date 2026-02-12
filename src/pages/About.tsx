@@ -78,7 +78,7 @@ export default function About() {
       
       <main className="pt-24">
         {/* Who We Are */}
-        <section className="section-padding pt-12 py-[10px] pb-0">
+        <section className="section-padding pt-12 py-[10px] pb-[48px]">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto text-center opacity-0 animate-fade-in" style={{ animationFillMode: 'forwards' }}>
               <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-in">
