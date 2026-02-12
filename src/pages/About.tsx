@@ -77,66 +77,35 @@ export default function About() {
       <Navbar />
       
       <main className="pt-24">
-        {/* Hero */}
+        {/* Who We Are */}
         <section className="section-padding pt-12">
           <div className="container-custom">
-            <div className="max-w-4xl mx-auto text-center">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-in">
-                About Us
-              </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 animate-fade-in" style={{ animationDelay: '100ms' }}>
-                We Build Digital <span className="text-gradient">Experiences</span>
-              </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed animate-fade-in" style={{ animationDelay: '200ms' }}>
-              Mosel designs and builds landing pages engineered to turn visitors into leads and customers.
-            We focus on clear messaging, conversion-driven UX, and fast performance — so every click
-            moves users closer to action.
-            </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Who We Are */}
-        <section className="section-padding bg-muted/30">
-          <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div className="opacity-0 animate-fade-in" style={{ animationFillMode: 'forwards' }}>
-                <span className="text-primary font-medium mb-4 block">Who We Are</span>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  A Web Studio Built for Real-World Business Needs
-                </h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
-                  <p>
-                    Mosel is a web development studio that helps businesses establish a clear
-                    and effective online presence.
-                  </p>
-                  <p>
-                    We work with small businesses, startups, and growing brands that need more
-                    than just a website - they need something that represents their business
-                    properly, works across devices, and is easy to manage over time.
-                  </p>
-                  <p>
-                    Our focus is on building practical, performance-focused websites, from
-                    simple landing pages to full business sites. We prioritize clarity,
-                    usability, and scalability, so your website supports your business goals
-                    instead of becoming a burden.
-                  </p>
-                  <p>
-                    Mosel was started with a simple idea: businesses should not need a large
-                    agency to get a reliable, professional website. We keep things lean,
-                    transparent, and tailored to what actually matters.
-                  </p>
-                </div>
-              </div>
-
-              <div className="opacity-0 animate-fade-in-up" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-                <div className="aspect-square rounded-2xl overflow-hidden">
-                  <img
-                    src="/placeholder.svg"
-                    alt="Team collaboration"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+            <div className="max-w-4xl mx-auto opacity-0 animate-fade-in" style={{ animationFillMode: 'forwards' }}>
+              <span className="text-primary font-medium mb-4 block">Who We Are</span>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                A Web Studio Built for Real-World Business Needs
+              </h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Mosel is a web development studio that helps businesses establish a clear
+                  and effective online presence.
+                </p>
+                <p>
+                  We work with small businesses, startups, and growing brands that need more
+                  than just a website - they need something that represents their business
+                  properly, works across devices, and is easy to manage over time.
+                </p>
+                <p>
+                  Our focus is on building practical, performance-focused websites, from
+                  simple landing pages to full business sites. We prioritize clarity,
+                  usability, and scalability, so your website supports your business goals
+                  instead of becoming a burden.
+                </p>
+                <p>
+                  Mosel was started with a simple idea: businesses should not need a large
+                  agency to get a reliable, professional website. We keep things lean,
+                  transparent, and tailored to what actually matters.
+                </p>
               </div>
             </div>
           </div>
