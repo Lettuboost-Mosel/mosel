@@ -81,7 +81,9 @@ export default function About() {
         <section className="section-padding pt-12">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto opacity-0 animate-fade-in" style={{ animationFillMode: 'forwards' }}>
-              <span className="text-primary font-medium mb-4 block">Who We Are</span>
+              <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-in">
+                About Us
+              </span>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 A Web Studio Built for Real-World Business Needs
               </h2>
