@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Laptop, Trophy, Award, Medal, Check } from 'lucide-react';
-import moselHeroLogo from '@/assets/images/mosel-hero-logo.png';
 import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
@@ -49,9 +48,9 @@ export default function Index() {
             </div>
 
             {/* Heading */}
-            <div className="mb-6 animate-fade-in" style={{ animationDelay: '100ms' }}>
-              <img src={moselHeroLogo} alt="Mosel" className="h-16 md:h-20 lg:h-24 mx-auto" />
-            </div>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 animate-fade-in" style={{ animationDelay: '100ms' }}>
+              <span className="text-gradient">Mosel</span>
+            </h1>
             
             <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
               Landing pages for more sales
