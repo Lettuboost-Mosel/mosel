@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import moselLogo from '@/assets/images/mosel-nav-logo.png';
+import moselLogo from '@/assets/images/mosel-logo.png';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -27,7 +27,8 @@ export function Navbar() {
       <div className="container-custom section-padding py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 group">
-            <img src={moselLogo} alt="Mosel Logo" className="h-8 md:h-10 object-contain transition-transform duration-300 group-hover:scale-110" />
+            <img src={moselLogo} alt="Mosel Logo" className="w-12 h-12 rounded-full object-cover transition-transform duration-300 group-hover:scale-110" />
+            <span className="text-xl font-bold tracking-tight">Mosel</span>
           </Link>
 
           {/* Desktop Navigation */}
