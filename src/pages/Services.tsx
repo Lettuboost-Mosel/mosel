@@ -13,8 +13,8 @@ const packages = [
     description: 'Perfect for small businesses getting started online.',
     features: [
       '1-page responsive website',
-      'Free domain 1st year',
-      'Free hosting + SSL',
+      'Free maintenance for 1 year',
+      '1x Free Redesign after 6 months',
       'WhatsApp button + Google Maps',
       'Social media links',
       'Basic SEO',
@@ -35,6 +35,7 @@ const packages = [
       'SEO Optimization',
       'Click-to-call & WhatsApp',
       '1 free revision after launch',
+      'Free domain 1st year',
     ],
     cta: 'Select Plan',
     hoverLabel: 'Professional Landing Pages',
