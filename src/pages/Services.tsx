@@ -14,7 +14,7 @@ const packages = [
     features: [
       '1-page responsive website',
       'Free maintenance for 1 year',
-      '1x Free Redesign after 6 months',
+      '1x Free Redesign within 6 months after launch',
       'WhatsApp button + Google Maps',
       'Social media links',
       'Basic SEO',
