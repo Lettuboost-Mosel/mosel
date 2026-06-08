@@ -1,8 +1,10 @@
+export type ProjectCategory = 'Web' | 'Landing' | 'App' | 'UI/UX' | 'Software Systems' | 'Chatbot/Automation';
+
 export interface Project {
   id: string;
   title: string;
   tagline: string;
-  category: 'Web' | 'Landing' | 'App' | 'UI/UX' | 'Software Systems';
+  category: ProjectCategory | ProjectCategory[];
   thumbnail: string;
   description: string;
   problem: string;
@@ -14,9 +16,12 @@ export interface Project {
   githubUrl?: string;
   figmaUrl?: string;
   videoUrl?: string;
+  mobileVideoUrl?: string;
   images?: string[];
 }
 
+import jomTravelThumbnail from "../assets/images/jom-travel-thumbnail.jpg";
+import aromaLabThumbnail from "../assets/images/aroma-lab-thumbnail.jpg";
 import lettuboostThumbnail from "../assets/images/lettuboost-thumbnail.png";
 import lettuboostImage1 from "../assets/images/lettuboost-image1.png";
 import lettuboostImage2 from "../assets/images/lettuboost-image2.png";
@@ -28,6 +33,36 @@ import textgenesThumbnail from "../assets/images/textGenes-thumbnail.png";
 
 
 export const projects: Project[] = [
+  {
+    id: 'jom-travel',
+    title: 'Jom Travel & Tour',
+    tagline: 'Full-featured travel agency website for a MOTAC-licensed Borneo ground specialist',
+    category: 'Web',
+    thumbnail: jomTravelThumbnail,
+    description: 'Jom Travel & Tour is a full-featured travel agency website for a MOTAC-licensed, Bumiputera-owned tour company based in Sarawak, and a trusted Borneo ground specialist for inbound travel. The site showcases outbound tour packages across Southeast Asia, East Asia, Turkey, and Europe, alongside signature Borneo experiences, transportation, and corporate M.I.C.E services. Built for strong first impressions, the site opens with a cinematic video hero featuring 5 rotating background clips (desktop + mobile variants) that immediately immerses visitors in the travel mood. An interactive 3D globe lets users explore destinations hands-on, boosting engagement and time-on-site. Destination browsing, category filtering, and direct WhatsApp CTAs are designed to shorten the path to conversion, turning curious visitors into inquiries with minimal friction.',
+    problem: '',
+    solution: '',
+    result: '',
+    technologies: ['React 19', 'TypeScript', 'Tailwind CSS 4', 'Three.js', 'react-globe.gl', 'Lucide React', 'Vite'],
+    year: 2025,
+    videoUrl: 'https://youtu.be/gwLX9yWby88?si=IFdyzlhi41ylueGm',
+    mobileVideoUrl: 'https://youtube.com/shorts/usLT6dbb-_M?si=Hx2BTj206omCOotF',
+  },
+  {
+    id: 'aroma-lab',
+    title: 'Aroma Lab',
+    tagline: 'Interactive perfume studio platform with AI chatbot and fragrance blend builder',
+    category: ['Web', 'Chatbot/Automation'],
+    thumbnail: aromaLabThumbnail,
+    description: 'Aroma Lab is a custom perfume studio based in Kuching, Sarawak. The web platform starts with a cinematic video hero produced by Mosel in both desktop and mobile versions, setting the brand tone from the very first impression. The site is centred around a signature interactive fragrance wheel — a touch-enabled rotary scent explorer that guides users through a multi-step blend builder to craft their own signature perfume. The platform includes an AI-powered bilingual chatbot (EN/MY) for 24/7 customer support, automated email delivery of personalised blend summaries, and a live product catalogue with marketplace integrations across Shopee, TikTok Shop, and eBay. Behind the scenes, Aroma Lab manages their entire inventory, orders, and fragrance notes database through a purpose-built admin dashboard, giving the client full operational independence.',
+    problem: '',
+    solution: '',
+    result: '',
+    technologies: ['React 18', 'TypeScript', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Supabase', 'DeepSeek AI', 'Resend Email', 'jsPDF'],
+    year: 2025,
+    videoUrl: 'https://youtu.be/t_B0BJa-rfo?si=vUCjG7eHWO9qzadl',
+    mobileVideoUrl: 'https://youtube.com/shorts/aMaah959sEM?si=CgYUST8aWJ32BDxr',
+  },
   {
     id: 'eventkamek',
     title: 'EventKamek',

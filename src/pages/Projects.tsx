@@ -3,19 +3,23 @@ import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { ProjectCard } from '@/components/ProjectCard';
 import { SectionHeader } from '@/components/SectionHeader';
-import { projects, type Project } from '@/data/projects';
+import { projects, type ProjectCategory } from '@/data/projects';
 import { cn } from '@/lib/utils';
 
-type Category = 'All' | Project['category'];
+type Category = 'All' | ProjectCategory;
 
-const categories: Category[] = ['All', 'Web', 'Landing', 'UI/UX', 'Software Systems'];
+const categories: Category[] = ['All', 'Web', 'Landing', 'UI/UX', 'Software Systems', 'Chatbot/Automation'];
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState<Category>('All');
 
   const filteredProjects = activeCategory === 'All'
     ? projects
-    : projects.filter(p => p.category === activeCategory);
+    : projects.filter(p =>
+        Array.isArray(p.category)
+          ? p.category.includes(activeCategory as ProjectCategory)
+          : p.category === activeCategory
+      );
 
   return (
     <div className="min-h-screen bg-background">

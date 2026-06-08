@@ -1,5 +1,15 @@
 import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+
+function toEmbedUrl(url: string): string {
+  let m = url.match(/youtu\.be\/([^?&]+)/);
+  if (m) return `https://www.youtube.com/embed/${m[1]}`;
+  m = url.match(/youtube\.com\/watch\?v=([^&]+)/);
+  if (m) return `https://www.youtube.com/embed/${m[1]}`;
+  m = url.match(/youtube\.com\/shorts\/([^?&]+)/);
+  if (m) return `https://www.youtube.com/embed/${m[1]}`;
+  return url;
+}
 import { ArrowLeft, ExternalLink, Github, Figma } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -53,9 +63,11 @@ export default function ProjectDetail() {
         <section className="container-custom px-4 sm:px-6 lg:px-8 pb-12">
           <div className="max-w-4xl">
             <div className="flex flex-wrap items-center gap-3 mb-4">
-              <Badge variant="secondary" className="bg-primary/10 text-primary border-0">
-                {project.category}
-              </Badge>
+              {(Array.isArray(project.category) ? project.category : [project.category]).map(cat => (
+                <Badge key={cat} variant="secondary" className="bg-primary/10 text-primary border-0">
+                  {cat}
+                </Badge>
+              ))}
               <span className="text-muted-foreground">{project.year}</span>
             </div>
 
@@ -98,16 +110,35 @@ export default function ProjectDetail() {
         </section>
 
         {/* Video Demo */}
-        {project.videoUrl && (
+        {(project.videoUrl || project.mobileVideoUrl) && (
           <section className="container-custom px-4 sm:px-6 lg:px-8 pb-16">
-            <div className="rounded-2xl overflow-hidden border border-border/50 animate-fade-in-up">
-              <iframe
-                src={project.videoUrl.replace('youtu.be/', 'www.youtube.com/embed/').replace('watch?v=', 'embed/').split('?')[0]}
-                title={`${project.title} Demo`}
-                className="w-full aspect-video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+            <div className={`grid gap-6 ${project.videoUrl && project.mobileVideoUrl ? 'grid-cols-1 lg:grid-cols-3' : 'grid-cols-1'}`}>
+              {project.videoUrl && (
+                <div className={`rounded-2xl overflow-hidden border border-border/50 animate-fade-in-up ${project.mobileVideoUrl ? 'lg:col-span-2' : ''}`}>
+                  {project.mobileVideoUrl && (
+                    <p className="px-4 pt-4 pb-2 text-sm font-medium text-muted-foreground">Desktop View</p>
+                  )}
+                  <iframe
+                    src={toEmbedUrl(project.videoUrl)}
+                    title={`${project.title} Desktop Demo`}
+                    className="w-full aspect-video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              )}
+              {project.mobileVideoUrl && (
+                <div className="rounded-2xl overflow-hidden border border-border/50 animate-fade-in-up">
+                  <p className="px-4 pt-4 pb-2 text-sm font-medium text-muted-foreground">Mobile View</p>
+                  <iframe
+                    src={toEmbedUrl(project.mobileVideoUrl)}
+                    title={`${project.title} Mobile Demo`}
+                    className="w-full aspect-[9/16]"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              )}
             </div>
           </section>
         )}

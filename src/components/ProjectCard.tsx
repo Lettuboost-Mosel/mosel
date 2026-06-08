@@ -43,9 +43,13 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
       {/* Content */}
       <div className="p-6">
         <div className="flex items-center justify-between mb-3">
-          <Badge variant="secondary" className="bg-primary/10 text-primary border-0">
-            {project.category}
-          </Badge>
+          <div className="flex flex-wrap gap-1.5">
+            {(Array.isArray(project.category) ? project.category : [project.category]).map(cat => (
+              <Badge key={cat} variant="secondary" className="bg-primary/10 text-primary border-0">
+                {cat}
+              </Badge>
+            ))}
+          </div>
           <span className="text-sm text-muted-foreground">{project.year}</span>
         </div>
 
