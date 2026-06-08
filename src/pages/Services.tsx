@@ -8,8 +8,8 @@ import { SectionHeader } from '@/components/SectionHeader';
 const packages = [
   {
     name: 'Starter',
-    price: 'RM490',
-    period: '/year',
+    price: 'RM799',
+    prefix: 'Starting From',
     description: 'Perfect for small businesses getting started online.',
     features: [
       '1-page responsive website',
@@ -18,15 +18,15 @@ const packages = [
       'WhatsApp button + Google Maps',
       'Social media links',
       'Basic SEO',
-      'Live in 3–5 days',
+      'Live in 5-10 Business days',
     ],
     cta: 'Select Plan',
     hoverLabel: 'Simple Landing Page',
   },
   {
     name: 'Professional',
-    price: 'RM1490',
-    period: '/year',
+    price: 'RM1799',
+    prefix: 'Starting From',
     description: 'Ideal for growing businesses that need more features.',
     features: [
       'Everything in Starter',
@@ -42,9 +42,8 @@ const packages = [
   },
   {
     name: 'Business',
-    price: 'RM2990',
-    period: '/year',
-    prefix: 'From',
+    price: 'RM4999',
+    prefix: 'Starting From',
     description: 'For businesses that need advanced functionality.',
     features: [
       'Everything in Professional',
@@ -118,7 +117,6 @@ export default function Services() {
                   <div className="mb-6">
                     {pkg.prefix && <span className="text-sm text-muted-foreground">{pkg.prefix} </span>}
                     <span className="text-4xl font-bold">{pkg.price}</span>
-                    <span className="text-muted-foreground">{pkg.period}</span>
                   </div>
                   <ul className="space-y-3 mb-8 flex-grow">
                     {pkg.features.map((feature) => (
